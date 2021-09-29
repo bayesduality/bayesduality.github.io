@@ -47,7 +47,8 @@
             <h4 style="font-weight:bold">About the project</h4>
             <p><b>Goal:</b> To develop a new learning paradigm for AI that learns like humans in an adaptive, robust, and continuous fashion.</p>
 
-            <p><b>Summary:</b> Our goal is to develop a new learning paradigm that supports adaptive, robust and lifelong learning of AI systems. We propose to do so by developing a new principle of machine learning, which we call the Bayes-Duality principle. Conceptually, the new principle hinges on the fundamental idea that an AI should be capable of efficiently preserving and acquiring the relevant knowledge, for a quick adaptation in the future. We apply this theory to representation of the past knowledge, faithful transfer to new situations, and collection of new knowledge whenever necessary. Current DL strategies lack these mechanisms and instead focus on brute-force data collection and training. Bayes-Duality aims to fix these deficiencies.</p>
+            <p><b>Summary:</b> Our goal is to develop a new learning paradigm that supports adaptive, robust and lifelong learning of AI systems. We propose to do so by developing a new principle of machine learning, which we call the Bayes-Duality principle. Conceptually, the new principle hinges on the fundamental idea that an AI should be capable of efficiently preserving and acquiring the relevant knowledge, for a quick adaptation in the future. We apply this theory to representation of the
+            past knowledge, faithful transfer to new situations, and collection of new knowledge whenever necessary. Current Deep-learning methods lack these mechanisms and instead focus on brute-force data collection and training. Bayes-Duality aims to fix these deficiencies.</p>
          </div>
       </div><!-- end of about the project--!>
 
@@ -173,15 +174,14 @@
 
             <img src="bayesduality_illustration.png" class="w3-round-large" alt="Bayes duality illustration" style="width:100%;max-width:700px">
 
-            <p>Our goal is to develop a new learning paradigm that enable adaptive, robust, and lifelong learning in AI systems. Deep-learning methods are not sufficiently adaptive or robust, e.g., new knowledge cannot be easily added in trained models and, when forced, the old knowledge is easily forgotten. Given a new dataset, the whole model needs to be retrained from scratch on both the old and new data, and training only on the new dataset leads to the catastrophic
+            <p>Our goal is to develop a new learning paradigm that enables adaptive, robust, and lifelong learning of AI systems. Deep-learning methods are not sufficiently adaptive or robust, e.g., new knowledge cannot be easily added in trained models and, when forced, the old knowledge is easily forgotten. Given a new dataset, the whole model needs to be retrained from scratch on both the old and new data, and training only on the new dataset leads to the catastrophic
             forgetting  of the past. All of the data must be available at the same time, which creates a dependency on large datasets and models that plagues almost all deep-learning systems. Our main goal is to fix this by developing a new learning paradigm to support adaptive and robust systems that learn throughout their lives.</p>
 
             <p>
 	   We introduce a new learning-principle for machine learning,
 	   which we call the Bayes Duality principle or 
-	   &ldquo;Bayes-Duality&rdquo;. Bayes-duality exploits the &ldquo;dual perspectives&rdquo; of approximate Bayesian methods, to extend convex duality for nonconvex problems. It is based on a new discovery that natural-gradients used with Bayesian methods give rise to &ldquo;dual representations&rdquo; which relates models to their training data and model structures (e.g., edges in the graphical
-            models). In the past, we have shown that natural-gradients for Bayesian problems yield a majority of
-            machine-learning algorithms as special cases (see our paper on <a href="https://arxiv.org/abs/2107.04562">the Bayesian Learning Rule</a>). Our goal now is to show that the same approach can recover convex duality as a special case and extend it to nonconvex problems, that arise in deep learning.</p>
+	   &ldquo;Bayes-Duality&rdquo;. The principle exploits the &ldquo;dual perspectives&rdquo; of approximate Bayesian posteriors, to extend convex duality to nonconvex problems. It is based on a new discovery that natural-gradients used with Bayesian methods automatically give rise to the dual representations. In the past, we have shown that natural-gradients for Bayesian problems yield a majority of
+            machine-learning algorithms as special cases (see our paper on <a href="https://arxiv.org/abs/2107.04562">the Bayesian Learning Rule</a>). Our goal now is to show that the same approach to extend convex duality to nonconvex problems, that arise in deep learning.</p>
 
             <p>Our main goals in the future include the following:</p>
             <ul class="w3-ul"> 
@@ -205,9 +205,7 @@
 
       <div class="w3-container w3-padding">
          <div id="publications" class="w3-card w3-padding w3-border w3-white w3-round-large">
-            <h4 style="font-weight:bold">Relevant Publications</h4>
-
-            <p>Below are some of the past publications that are useful to understand the Bayesian-duality principle.</p>
+            <h4 style="font-weight:bold">Publications</h4>
 
                <ul class="w3-ul">
                   <li>
