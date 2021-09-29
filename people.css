@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.0%;
+  max-width: 170px;
+  margin-bottom: 0px;
+  padding: 0 10px;
+}
+
+@media (max-width: 450px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+    min-height: 350px;
+}
+
+.container {
+  padding: 0 4px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+    color: grey;
+    font-size: 10pt;
+}
+
+.info {
+    color: black;
+    font-size: 10pt;
+}
