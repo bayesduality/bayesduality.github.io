@@ -45,7 +45,7 @@
       <div class="w3-container w3-padding">
          <div id="about" class="w3-card w3-padding w3-border w3-white w3-round-large">
             <h4 style="font-weight:bold">About the project</h4>
-            <p><b>Goal:</b> To build a new learning paradigm for AI that learns like humans in an adaptive, robust, and continuous fashion.</p>
+            <p><b>Goal:</b> To develop a new learning paradigm for AI that learns like humans in an adaptive, robust, and continuous fashion.</p>
 
             <p><b>Summary:</b> Our goal is to develop a new learning paradigm that supports adaptive, robust and lifelong learning of AI systems. We propose to do so by developing a new principle of machine learning, which we call the Bayes-Duality principle. Conceptually, the new principle hinges on the fundamental idea that an AI should be capable of efficiently preserving and acquiring the relevant knowledge, for a quick adaptation in the future. We apply this theory to representation of the past knowledge, faithful transfer to new situations, and collection of new knowledge whenever necessary. Current DL strategies lack these mechanisms and instead focus on brute-force data collection and training. Bayes-Duality aims to fix these deficiencies.</p>
          </div>
@@ -171,14 +171,41 @@
       <div class="w3-container w3-padding">
          <div id="research" class="w3-card w3-padding w3-border w3-white w3-round-large">
             <h4 style="font-weight:bold">Research</h4>
-            -- coming soon ---
 
+            <img src="bayesduality_illustration.png" class="w3-round-large" alt="Bayes duality illustration" style="width:100%;max-width:700px">
+
+            <p>Our goal is to develop a new learning paradigm that enable adaptive, robust, and lifelong learning in AI systems. Deep-learning methods are not sufficiently adaptive or robust, e.g., new knowledge cannot be easily added in trained models and, when forced, the old knowledge is easily forgotten. Given a new dataset, the whole model needs to be retrained from scratch on both the old and new data, and training only on the new dataset leads to the catastrophic
+            forgetting  of the past. All of the data must be available at the same time, which creates a dependency on large datasets and models that plagues almost all deep-learning systems. Our main goal is to fix this by developing a new learning paradigm to support adaptive and robust systems that learn throughout their lives.</p>
+
+            <p>We introduce a new learning-principle for machine learning, which we call the Bayes Duality principle or “Bayes-Duality”. Bayes-duality exploits the "dual perspectives" of approximate Bayesian methods, to extend convex duality for nonconvex problems. It is based on a new discovery that natural-gradients used with Bayesian methods give rise to “dual representations” which relates models to their training data and model structures (e.g., edges in the graphical
+            models). In the past, we have shown that natural-gradients for Bayesian problems yield a majority of
+            machine-learning algorithms as special cases (see our paper on <a href="https://arxiv.org/abs/2107.04562">the Bayesian Learning Rule</a>). Our goal now is to show that the same approach can recover convex duality as a special case and extend it to nonconvex problems, that arise in deep learning.</p>
+
+            <p>Our main goals in the future include the following:</p>
+            <ul class="w3-ul"> 
+               <li> A theory of Bayes-duality and connections to other dualities,
+               <li> Theoretical guarantees for adaptive systems based on Bayes-duality</li>
+               <li> Practical methods for knowledge transfer and collection in deep learning</li> 
+            </ul>
+
+            <p>We already have a few promising results in these directions </p>
+            <ul class="w3-ul">
+               <li> <a href="https://arxiv.org/abs/1906.01930" target="_blank">DNN2GP</a> connects deep networks to their dual Gaussian Process representation [ <a href="https://arxiv.org/abs/1906.01930" target="_blank">arXiv</a> ]</li>
+               <li> <a href="https://arxiv.org/abs/2004.14070" target="_blank">FROMP</a> uses the dual representation (memorable past) for continual learning [ <a href="https://arxiv.org/abs/2004.14070" target="_blank">arXiv</a> ]</li>
+               <li> <a href="http://arxiv.org/abs/2106.08769" target="_blank">K-priors</a> adapt the past knowledge to changes in the training frameworks [ <a href="http://arxiv.org/abs/2106.08769" target="_blank">arXiv</a> ]</li>
+               <li> <a href="http://arxiv.org/abs/2106.08769" target="_blank">Duality of approximate Bayesian inference</a></li>
+               <li> Dual parameterization of Sparse Variational Gaussian Processes (paper coming soon) </li>
+            </ul>
+
+            
          </div>
       </div><!-- end of research--!>
 
       <div class="w3-container w3-padding">
          <div id="publications" class="w3-card w3-padding w3-border w3-white w3-round-large">
-            <h4 style="font-weight:bold">Publications</h4>
+            <h4 style="font-weight:bold">Relevant Publications</h4>
+
+            <p>Below are some of the past publications that are useful to understand the Bayesian-duality principle.</p>
 
                <ul class="w3-ul">
                   <li>
@@ -190,23 +217,22 @@
 
                   <li>
                      <span class="title">Knowledge-Adaptation Priors</span>, <br>
-                     <span class="conf">(Preprint)</span>
+                     <span class="conf">(NuerIPS 2021)</span>
                      <span class="me">M.E. Khan</span>, <span class="author">Siddharth Swaroop</span>    
                      [ <a href="http://arxiv.org/abs/2106.08769" target="_blank">arXiv</a> ] [ <a href="papers/July23_2021_CL_workshop.pdf" target="_blank">Slides</a> ] [ <a href="https://t.co/v68OrIE0Xz?amp=1" target="_blank">Tweet</a> ] [ <a href="https://t.co/XBRwRh3Lde?amp=1" target="_blank">SlidesLive Video</a> ]
                   </li>
 
                   <li>
-                     <span class="title">Continual Deep Learning by Functional Regularisation of Memorable Past</span><br>
-                     <span class="conf">(NeurIPS 2020)</span>
-                     <span class="author">P. Pan<sup>*</sup>, S. Swaroop<sup>*</sup>, A. Immer, R. Eschenhagen, R. E. Turner,</span> <span class="me">M.E. Khan</span>
-                     [ <a href="https://arxiv.org/abs/2004.14070" target="_blank">arXiv</a> ] [ <a href="https://github.com/team-approx-bayes/fromp" target=_blank">Code</a> ] [ <a href="FROMP_NeurIPS2020_poster.pdf" target=_blank">Poster</a> ]<br>
-                     <b>Accepted for an oral presentation</b>, 1% of all submisssions (105 out of 9454 submissions)</b>,<br>
+                     <span class="title">Dual Parameterization of Sparse Variational Gaussian Processes</span>, <br>
+                     <span class="conf">(NeurIPS 2021)</span>
+                     <span class="author">P. Chang, V. ADAM</span>, <span class="me">M.E. Khan</span>, <span class="author">A. Solin</span>    
                   </li>
 
                   <li>
-                  <span class="title">Practical Deep Learning with Bayesian Principles</span>, <br>
-                  <span class="conf">(<a href="https://nips.cc/Conferences/2019" target="_blank">NeurIPS 2019</a>)</span> <span class="author">K. Osawa, S. Swaroop, A. Jain, R. Eschenhagen, R.E. Turner, R. Yokota, </span><span class="me">M.E. Khan</span>.
-                  [ <a href="https://arxiv.org/abs/1906.02506" target="_blank">arXiv</a> ] [ <a href="https://github.com/team-approx-bayes/dl-with-bayes" target=_blank">Code</a> ]
+                     <span class="title">Continual Deep Learning by Functional Regularisation of Memorable Past</span><br>
+                     <span class="conf">(NeurIPS 2020, Oral)</span>
+                     <span class="author">P. Pan<sup>*</sup>, S. Swaroop<sup>*</sup>, A. Immer, R. Eschenhagen, R. E. Turner,</span> <span class="me">M.E. Khan</span>
+                     [ <a href="https://arxiv.org/abs/2004.14070" target="_blank">arXiv</a> ] [ <a href="https://github.com/team-approx-bayes/fromp" target=_blank">Code</a> ] [ <a href="FROMP_NeurIPS2020_poster.pdf" target=_blank">Poster</a> ]<br>
                   </li>
 
                   <li>
