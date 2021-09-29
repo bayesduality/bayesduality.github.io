@@ -35,12 +35,12 @@ html {
   display: table;
 }
 
-.title {
+.member-title {
     color: grey;
     font-size: 10pt;
 }
 
-.info {
+.member-info {
     color: black;
     font-size: 10pt;
 }
