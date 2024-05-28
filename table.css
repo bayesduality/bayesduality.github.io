@@ -32,10 +32,11 @@
             text-align: center;
         }
         .break {
-            background-color: #b6d7a8;
-            color: #000;
+            background-color: white;
+            color: lightgray;
             justify-content: center;
             align-items: center;
+            width: 1%;
         }
         .tutorial {
             background-color: #f6b26b;
@@ -46,16 +47,17 @@
             color: #000;
         }
         .lunch {
-            background-color: #6aa84f;
-            color: #000;
+            background-color: white;
+            color: lightgray;
             justify-content: center;
             align-items: center;
+            width: 1%;
         }
         .panel {
             background-color: #8e7cc3;
             color: #000;
         }
         .CREST {
-            background-color: #B22222;
+            background-color: #a4c2f4;
             color: #000;
         }

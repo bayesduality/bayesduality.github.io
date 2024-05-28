@@ -106,4 +106,6 @@ opacity: 1;
   border-radius: .25em;
 }
 
-
+table {
+  border-spacing: 0.5rem;
+}
