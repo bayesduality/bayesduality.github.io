@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <title>The 2nd Bayes-Duality Workshop 2024</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,7 +11,44 @@
 <link rel="stylesheet" href="people.css"> 
 <link rel="stylesheet" href="table.css">
 
+<script>
+function transposeTable() {
+    // Get the table
+    var table = document.getElementById("myTable");
+    
+    // Check if table exists and has rows
+    if (!table || table.rows.length === 0) {
+        console.error("Table does not exist or is empty.");
+        return;
+    }
 
+    // Get the rows and columns
+    var rows = table.rows;
+    var cols = rows[0].cells.length;
+    
+    // Create a new table
+    var newTable = document.createElement("table");
+    
+    // Create rows and columns in the new table
+    for (var i = 0; i < cols; i++) {
+        var newRow = document.createElement("tr");
+        for (var j = 0; j < rows.length; j++) {
+            var newCell = document.createElement("td");
+            // Check if cell exists
+            if (rows[j].cells[i]) {
+                newCell.appendChild(document.createTextNode(rows[j].cells[i].innerText));
+            } else {
+                newCell.appendChild(document.createTextNode(""));
+            }
+            newRow.appendChild(newCell);
+        }
+        newTable.appendChild(newRow);
+    }
+    
+    // Replace the old table content with the new one
+    table.innerHTML = newTable.innerHTML;
+}</script>
+</head>
 <body bgcolor="#E5E4E2">
   <header id="top" class="w3-container w3-padding" id="myHeader">
     <div class="w3-center w3-padding">
@@ -379,133 +417,207 @@
             <div id="program" class="w3-card w3-padding w3-border w3-white w3-round-large">
             <h4 style="font-weight:bold">Program (Under Construction)</h4>
      
-    <table>
-        <tr>
-            <td>Color coding</td>
-            <td class="talk">Talks</td>
-            <td class="CREST">CREST Talks</td>
-            <td class="tutorial">Tutorials</td>
-            <td class="poster">Poster Sessions</td>
-            <td class="panel">Panel Discussion</td>
-            <td class="social">Social Events</td>
-        </tr>
-    </table>
-             
-                
-        <table>
-         <tr>
-            <th>Time/<br>Date</th>
-            <th>10h</th>
-            <th>11h</th>
-            <th>11h30</th>
-            <th>12h30</th>
-            <th>14h</th>
-            <th>15h</th>
-            <th>16h</th>
-            <th>16h30</th>
-            <th>17h30</th>
-            <th>18h</th>
-         </tr>
-         <tr>
-		      <td class="highlight"><b>June 12</b></td>
-            <td class="talk">Vincent Fortuin</td>
-            <td class="break">Coffee Break</td>
-            <td class="talk">Juho Lee</td>
-            <td class="lunch">Lunch</td>
-            <td class="tutorial">Tutorial 1</td>
-            <td class="tutorial">Tutorial 2</td>
-            <td class="break">Coffee Break</td>
-            <td class="talk">Matt Jones</td>
-            <td class="highlight"></td>
-            <td class="highlight"></td>
-        </tr>
-        <tr>
-            <td colspan="11" ></td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 13</b></td>
-            <td class="talk">Haavard Rue</td>
-            <td class="break">Coffee Break</td>
-            <td class="talk">Eugene Ndiaye</td>
-            <td class="lunch">Lunch</td>
-            <td class="tutorial">Tutorial 3</td>
-			   <td class="tutorial">Tutorial 4</td>
-            <td class="break">Coffee Break</td>
-			   <td class="talk">Alexander Immer</td>
-        </tr>
-        <tr>
-            <td colspan="11" ></td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 14</b></td>
-            <td class="talk">Frank Nielsen</td>
-            <td class="break">Coffee Break</td>
-            <td class="talk">Jonghyun Choi</td>
-            <td class="lunch">Lunch</td>
-            <td class="tutorial">Tutorial 5</td>
-			   <td class="tutorial">Tutorial 6</td>
-            <td class="break">Coffee Break</td>
-			   <td colspan="2" class="panel">Panel I <br>(Bayes)</td>
-            <td class="social">Dinner/Drinks</td>
-        </tr>
-        <tr>
-            <td colspan="11" ></td>
-        </tr>
-        <tr>
-            <td colspan="11" ></td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 17</b></td>
-   			<td class="talk">Martin Mundt</td>
-   			<td rowspan="6" class="break">Coffee Break</td>
-            <td class="talk">Siddharth Swaroop</td>
-            <td rowspan="6" class="lunch">Lunch</td>
-            <td class="tutorial">Tutorial 7</td>
-            <td class="poster">Poster Session</td>
-            <td rowspan="4" class="break">Coffee Break</td>
-            <td class="poster">Poster Session</td>
-            <td rowspan="1" class="highlight"></td>
-            <td class="social">Dinner/Drinks</td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 18</b></td>
- 			<td class="CREST">CREST<br>Talk 1</td>
-            <td class="CREST">CREST<br>Talk 2</td>
- 			<td class="CREST">CREST<br>Talk 3</td>
-			<td class="CREST">CREST<br>Talk 4</td>
-			<td colspan="2" class="panel">Panel II<br>(Lifelong Learning)</td>
-			<td class="social">Speakers Dinner</td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 19</b></td>
-            <td class="talk">Razvan Pascanu</td>
-            <td class="talk">Rupam Mahmood</td>
-            <td class="talk">Sarath Chandar</td>
-            <td class="talk">Tom Rainforth</td>
-            <td class="talk">Adam White</td>
-            <td rowspan="2" class="highlight"></td>
-            <td rowspan="1" class="highlight"></td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 20</b></td>
-            <td class="talk">Hossein Mobahi</td>
-            <td class="talk">Arindam Banerjee</td>
-            <td class="poster">Poster Session</td>
-            <td class="poster">Poster Session</td>
-            <td class="poster">Poster Session</td>
-            <td class="social">Dinner/Drinks</td>
-        </tr>
-        <tr>
-            <td class="highlight"><b>June 21</b></td>
-            <td class="talk">Yingzhen Li</td>
-            <td class="talk">Daiki Chijiwa</td>
-            <td class="talk">Zelda Mariet</td>
-            <td class="break"> Coffee Break*</td>
-            <td class="talk">Ehsan Amid</td>
-            <td colspan="2" class="panel">Panel III <br>(Future of AI)</td>
-            <td rowspan="1" class="highlight"></td>
-        </tr>
-	</table>
+<table>
+    <tbody>
+    <tr>
+        <td>Date/Time</td>
+        <td>June 12</td>    <td></td>   <td>June 13</td>    <td></td>   <td>June 14</td>
+        <td></td>
+        <td></td>
+        <td>June 17</td>    <td></td>   <td>June 18</td>    <td></td>   <td>June 19</td>    <td></td>   <td>June 20</td>    <td></td>   <td>June 21</td>
+    </tr>
+    <tr>
+        <td>10h</td>
+        <td class="talk">Introduction</td>  
+        <td></td>
+        <td class="talk">Haavard Rue</td>
+        <td></td>
+        <td class="talk">Frank Nielsen</td>
+        <td></td>
+        <td></td>
+        <td class="talk">Martin Mundt</td>
+        <td></td>
+        <td class="CREST">CREST Emtiyaz Khan</td>
+        <td></td>
+        <td class="talk">Razvan Pascanu</td>
+        <td></td>
+        <td class="talk">Hossein Mobahi</td>
+        <td></td>
+        <td class="talk">Yingzhen Li</td>
+    </tr>
+    <tr>
+        <td>11h</td>
+        <td class="talk">Vincent Fortuin</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+    </tr>
+    <tr>
+        <td>11h30</td>
+        <td class="talk">Juho Lee</td>
+        <td></td>
+        <td class="talk">Eugene Ndiaye</td>
+        <td></td>
+        <td class="talk">Jonghyun Choi</td>
+        <td></td>
+        <td></td>
+        <td class="talk">Siddharth Swaroop</td>
+        <td></td>
+        <td class="CREST">CREST Thomas Möllenhoff</td>
+        <td></td>
+        <td class="talk">Rupam Mahmood</td>
+        <td></td>
+        <td class="talk">Arindam Banerjee</td>
+        <td></td>
+        <td class="talk">Daiki Chijiwa</td>
+    </tr>
+    <tr>
+        <td>12h30</td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Lunch</td>
+    </tr>
+    <tr>
+        <td>14h</td>
+        <td class="tutorial">Tutorial 1</td>
+        <td></td>
+        <td class="tutorial">Tutorial 3</td>
+        <td></td>
+        <td class="tutorial">Tutorial 5</td>
+        <td></td>
+        <td></td>
+        <td class="tutorial">Tutorial 7</td>
+        <td></td>
+        <td class="CREST">CREST Talk 3</td>
+        <td></td>
+        <td class="talk">Sarath Chandar</td>
+        <td></td>
+        <td class="panel">Poster Session</td>
+        <td></td>
+        <td class="talk">Zelda Mariet</td>
+    </tr>
+    <tr>
+        <td>15h</td>
+        <td class="tutorial">Tutorial 2</td>
+        <td></td>
+        <td class="tutorial">Tutorial 4</td>
+        <td></td>
+        <td class="tutorial">Tutorial 6</td>
+        <td></td>
+        <td></td>
+        <td class="panel">Poster Session</td>
+        <td></td>
+        <td class="talk">CREST Talk 4</td>
+        <td></td>
+        <td class="talk">Tom Rainforth</td>
+        <td></td>
+        <td class="panel">Poster Session</td>
+        <td></td>
+        <td>Coffee Break*</td>
+    </tr>
+    <tr>
+        <td>16h</td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Coffee Break</td>
+        <td></td>
+        <td>Ehsan Amid</td>
+    </tr>
+    <tr>
+        <td>16h30</td>
+        <td class="talk">Matt Jones</td>
+        <td></td>
+        <td class="talk">Alexander Immer</td>
+        <td></td>
+        <td class="panel">Panel I (Bayes)</td>
+        <td></td>
+        <td></td>
+        <td class="panel">Poster Session</td>
+        <td></td>
+        <td class="panel">Panel II (Lifelong Learning)</td>
+        <td></td>
+        <td class="talk">Adam White</td>
+        <td></td>
+        <td class="panel">Poster Session</td>
+        <td></td>
+        <td class="panel">Panel III (Future of AI)</td>
+    </tr>
+    <tr>
+        <td>17h30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>      
+    </tr>
+    <tr>
+        <td>18h</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Dinner/Drinks</td>
+        
+        <td></td>
+        <td></td>
+        <td>Dinner/Drinks</td>
+        <td></td>
+        <td>Speakers Dinner</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Dinner/Drinks</td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody></table>
     
     <p> * Due to a fire/earthquake drill from 15:15 to 15:45, the regular coffee break will start earlier.<br>
     Last talk will begin once the drill is over, and the panel will follow a bit later than scheduled.</p>
