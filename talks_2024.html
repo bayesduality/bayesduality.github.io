@@ -12,68 +12,52 @@
 <link rel="stylesheet" href="table.css">
 </head>
 <body bgcolor="#E5E4E2">
-  <header id="top" class="w3-container w3-padding" id="myHeader">
-    <div class="w3-center w3-padding">
-      <h2 class="w3-xxlarge" style="font-weight:bold">The 2nd Bayes-Duality Workshop 2024</h2>
-    </div>
-  </header>
 
-  <!-- Top navigation -->
-  <div class="w3-topnav w3-padding w3-center w3-theme w3-large">
-    <a class="w3-btn w3-theme" href="workshop_2024.html#about">About</a>
-    <a class="w3-btn w3-theme" href="workshop_2024.html#program">Program</a>
-    <a class="w3-btn w3-theme" href="workshop_2024.html#participants">Participants</a>
-    <!--a class="w3-btn w3-theme" href="venue_2024.html">Venue Information</a-->
-    <!--a class="w3-btn w3-theme" href="workshop_2023.html">Workshop 2023</a>-->
-  </div>
   <div class="w3-padding">
-   <h2 class="w3-xlarge" style="font-weight:bold">Detailed Program</h2>
+   <h1 class="w3-xlarge" style="font-weight:bold">Detailed Program</h2>
   </div>
   <div class="w3-row">
         <div class="w3-container w3-padding w3-auto" style="width:100%">
+
             <div id="June12" class="w3-card w3-padding w3-border w3-white w3-round-large">
-            <h3>June 12</h3>
-            <hr class="solid">
-            <h5>Morning Session: Matt Jones</h5>
-            <hr class="solid">
-            <h4 id="intro">Masashi Sugiyama</h4>
-            <div class="w3-container" style="text-align:justify">
-                <h5>[10:00-10:10] Introduction to the Workshop</h5>
-            </div>
-            
-            <h4 id="talk1">Vincent Fortuin</h4>
-                <div class="w3-container" style="text-align:justify">
-                    <h5>[10:10-11:10] Talk Title TBD</h5>
-                    <label for="t1" class="read-more-trigger"> Details</label>
-                    <input type="checkbox" class="read-more-state" id="t1">
-                    <span class="read-more-wrap">
+
+               <h2>June 12</h3>
+               <h3>Morning Session: Matt Jones</h3>
+
+               <ul class="w3-ul">
+                  <li id="intro">[10:00-10:10] Masashi Sugiyama: Introduction to AIP</li>
+
+                  <li id="intro">[10:10-10:30] Emtiyaz Khan: Logistics</li> 
+
+                  <li id="vincent">[10:10-11:10] Vincent Fortuin 
+                     <label for="vincent1" class="read-more-trigger"> Details</label> 
+                     <input type="checkbox" class="read-more-state" id="vincent1">
+                     <span class="read-more-wrap">
                         <span class="read-more-target">
-                        <p style="text-align: justify"><b>Abstract: TBD</b></p>
-                    
-                        <p style="text-align: justify"><b>Bio: TBD</b></p>
+                           <p style="text-align: justify">Abstract: TBA</p>
+                           <p style="text-align: justify">Bio: TBA</p>
                         </span> 
-                </span>
-            </div>
-            
-            
-            <h4 id="talk2">Juho Lee</h4>
-            <div class="w3-container" style="text-align:justify">
-                    <h5>[11:30-12:30] Toward scalable and generalizable Bayesian deep learning</h5>
-                    <label for="t2" class="read-more-trigger"> Details</label>
-                    <input type="checkbox" class="read-more-state" id="t2">
-                    <span class="read-more-wrap">
+                     </span>
+                  </li>
+
+                  <li id="juho">[11:30-12:30] Juho Lee 
+                     <label for="juho1" class="read-more-trigger"> Details</label> 
+                     <input type="checkbox" class="read-more-state" id="juho1">
+                     <span class="read-more-wrap">
                         <span class="read-more-target">
-                        <p style="text-align: justify"><b>Abstract: </b>In the era of large-scale foundation models, Bayesian deep learning remains an indispensable tool due to its capability to quantify uncertainty in a principled manner and adapt continuously to dynamic environments. However, the well-known challenges of Bayesian learning—difficulty in posterior inference, high cost of Bayesian model averaging (BMA), and selecting appropriate prior distributions—are even more pronounced in modern AI models. In this talk, I will present our recent work addressing these challenges. First, for more efficient posterior inference in Bayesian neural networks (BNNs), I will discuss how meta-learning can enhance the mixing of stochastic gradient MCMC (SGMCMC) algorithms for various BNNs. Second, I will introduce our newly developed algorithm that reduces the cost of BMA using diffusion-based distribution matching techniques. Finally, I will present our work on meta-learning stochastic processes, which can serve as priors for a range of downstream tasks.</p>
-                    
-                        <p style="text-align: justify"><b>Bio: </b>Dr. Juho Lee is an associate professor at the Kim Jaechul Graduate School of AI Korea Advanced Institute of Science and Technology (KAIST). He earned his Ph.D. in Computer Science & Engineering from Pohang University of Science & Technology (POSTECH) and did his postdoc in the Computational Statistics & Machine Learning group at the University of Oxford, working with Professor François Caron. His research primarily focuses on Bayesian deep learning, with significant contributions to Bayesian nonparametrics, meta-learning, and generative modeling.</p>
+                           <p style="text-align: justify">Abstract: In the era of large-scale foundation models, Bayesian deep learning remains an indispensable tool due to its capability to quantify uncertainty in a principled manner and adapt continuously to dynamic environments. However, the well-known challenges of Bayesian learning—difficulty in posterior inference, high cost of Bayesian model averaging (BMA), and selecting appropriate prior distributions—are even more pronounced in modern AI models. In this talk, I will present our recent work addressing these challenges. First, for more efficient posterior inference in Bayesian neural networks (BNNs), I will discuss how meta-learning can enhance the mixing of stochastic gradient MCMC (SGMCMC) algorithms for various BNNs. Second, I will introduce our newly developed algorithm that reduces the cost of BMA using diffusion-based distribution matching techniques. Finally, I will present our work on meta-learning stochastic processes, which can serve as priors for a range of downstream tasks.</p>
+                           <p style="text-align: justify">Bio: Dr. Juho Lee is an associate professor at the Kim Jaechul Graduate School of AI Korea Advanced Institute of Science and Technology (KAIST). He earned his Ph.D. in Computer Science & Engineering from Pohang University of Science & Technology (POSTECH) and did his postdoc in the Computational Statistics & Machine Learning group at the University of Oxford, working with Professor François Caron. His research primarily focuses on Bayesian deep learning, with significant contributions to Bayesian nonparametrics, meta-learning, and generative modeling.</p>
                         </span> 
-                </span>
+                     </span>
+                  </li>
+
+                  <li>[11:30-12:30] Lunch Break (On Your Own) </li>
+               </ul>
+
+               <h3>Afternoon Session: Vincent Fortuin</h3>
             </div>
             
-            <hr class="solid">
-            <h5>Afternoon Session: Vincent Fortuin</h5>
-            <hr class="solid">
-            
+                        
             <h4 id="tutorial1">Tutorial 1</h4>
             <div class="w3-container" style="text-align:justify">
                     <h5>[14:00-15:00] Tutorial Title TBD</h5>
