@@ -121,13 +121,13 @@
            <p>Afternoon Session (chair: Eugene Ndiaye)</p>
 
            <ul class="w3-ul">
-            <li id="eugene">[14:00-15:00] Eugene Ndiaye: Talk TBA
+            <li id="eugene">[14:00-15:00] Eugene Ndiaye: From Conformal Predictions to Confidence Regions
                <label for="eugene1" class="read-more-trigger"> Details</label> 
                <input type="checkbox" class="read-more-state" id="eugene1">
                <span class="read-more-wrap">
                   <span class="read-more-target">
-                     <p style="text-align: justify">Abstract: TBA</p>
-                     <p style="text-align: justify">Bio: TBA</p>
+                     <p style="text-align: justify">Abstract: Conformal prediction methodologies have significantly advanced the quantification of uncertainties in predictive models. Yet, the construction of confidence regions for model parameters presents a notable challenge, often necessitating stringent assumptions regarding data distribution or merely providing asymptotic guarantees. We introduce a novel approach termed CCR, which employs a combination of conformal prediction intervals for the model outputs to establish confidence regions for model parameters. We present coverage guarantees under minimal assumptions on noise and that is valid in finite sample regime. Our approach is applicable to both split conformal predictions and black-box methodologies including full or cross-conformal approaches. In the specific case of linear models, the derived confidence region manifests as the feasible set of a Mixed-Integer Linear Program (MILP), facilitating the deduction of confidence intervals for individual parameters and enabling robust optimization. We empirically compare CCR to recent advancements in challenging settings such as with heteroskedastic and non-Gaussian noise.</p>
+                     <p style="text-align: justify">Bio: I am currently a researcher in the Machine Learning Group @Apple in Paris. I focus mainly on optimization and uncertainty quantification. I was previously a postdoctoral researcher both at Georgia Institute of Technology (USA) and Riken AIP (Japan). I hold a PhD in Applied Mathematics from University of Paris Saclay (France). My doctoral thesis focused on the design and analysis of faster and safer optimization algorithms for variable selection and hyperparameter calibration in high dimension.</p>
                   </span> 
                </span>
             </li>
@@ -200,23 +200,24 @@
                <p>Afternoon Session</p> 
     
                <ul class="w3-ul">
-                 <li id="tutorial5">[14:00-15:00] Tutorial by Martin Mundt on Continual Learning 
+                 <li id="tutorial5">[14:00-15:00] Tutorial by Martin Mundt on Continual Learning: Pillars of forgetting in continual updates and the road to lifelong learning
                     <label for="tutorial5d" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="tutorial5d">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
+                          <p style="text-align: justify">Abstract: Machine learning studies the design of models and training algorithms in order to learn how to solve tasks from data. Whereas traditional machine learning concentrates on predefined training datasets, the renaissance of continual learning also takes into account that the world is constantly evolving. In this tutorial, I will focus on the challenge of catastrophic interference when attempting respective continual updates and summarize mechanisms to counteract it. To this end, I will survey three pillars of approaches, spanning the perspective from data, to optimization, and choice of model. Finally, I will highlight how the challenge of sequential updates relates to broader machine learning and which further elements are required on the road to true lifelong learning systems.</p>
+                          <p style="text-align: justify">Bio: Martin is an independent research group leader at TU Darmstadt and hessian.AI, where he leads the Open World Lifelong Learning lab. He is also a board member at the non-profit ContinualAI, a core-organizer of Queer in AI, was the Diversity & Inclusion chair at AAAI-24 and currently serves as Review Process Chair for CoLLAs 2024.
+                           Previously, he was an interim professor and postdoctoral researcher at TU Darmstadt, has obtained a CS PhD from Goethe University Frankfurt, and holds a Masters degree in Physics. The main vision behind his research is to transcend static machine learning systems towards adaptive and sustainable lifecycles.</p>
                        </span> 
                     </span>
                  </li>
-                 <li id="tutorial6">[15:00-16:00] Tutorial by Tom Rainforth on Bayesian Experimental Design 
+                 <li id="tutorial6">[15:00-16:00] Tutorial by Tom Rainforth on Modern Bayesian Experimental Design
                     <label for="tutorial6d" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="tutorial6d">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
+                          <p style="text-align: justify">Abstract: Bayesian experimental design (BED) provides a powerful and general framework for optimizing the design of experiments. However, its deployment often poses substantial computational challenges that can undermine its practical use. In this tutorial, I will outline the Bayesian experimental design framework and explain how recent advances have transformed our ability to overcome these challenges and thus utilize BED effectively, before discussing some key areas for future development in the field. Related <a href="https://arxiv.org/abs/2302.14545">review paper</a></p>
+                          <p style="text-align: justify">Bio: I am a Senior Researcher in Machine Learning (and from September, Associate Professor) in the Department of Statistics at the University of Oxford, where I run the <a href="https://rainml.uk/">RainML Research Lab</a>. My research covers a wide range of topics in and around machine learning and experimental design, with areas of particular interest including Bayesian experimental design, deep learning, representation learning, generative models, Monte Carlo methods, active learning, probabilistic programming, and variational inference.</p>
                        </span> 
                     </span>
                  </li>
@@ -239,13 +240,14 @@
                <p>Morning Session (chair: Frank Nielsen)</p>
     
                <ul class="w3-ul">
-                  <li id="martin">[10:00-11:00] Martin Mundt: Talk TBA
+                  <li id="martin">[10:00-11:00] Martin Mundt: Challenging memory as the solution to continual learning
                     <label for="martin1" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="martin1">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
+                          <p style="text-align: justify">Abstract: Deep models tend to fall victim to catastrophic forgetting when updated sequentially or transferred to new scenarios. Continual learning seeks to provide a remedy to this phenomenon. To this end, prevalent approaches construct a relevant memory of the past, typically by retaining what is considered to be most important data. The common assumption is that the solution to continual learning lies in the ability to accumulate prior knowledge. In this talk, I challenge this assumption at the hand of two examples. I will first detail how knowledge can be distilled from a differentiable classifier into a second model, even if we don’t have access to any training data or model internals. Conversely, I will show that models can perform catastrophically in the presence of confounders over time, even if they are equipped with perfect memory of all previously observed data. Together, these examples challenge our present view of memory solutions for continual learning and call out for new techniques to be developed.</p>
+                          <p style="text-align: justify">Bio: Martin is an independent research group leader at TU Darmstadt and hessian.AI, where he leads the Open World Lifelong Learning lab. He is also a board member at the non-profit ContinualAI, a core-organizer of Queer in AI, was the Diversity & Inclusion chair at AAAI-24 and currently serves as Review Process Chair for CoLLAs 2024.
+                           Previously, he was an interim professor and postdoctoral researcher at TU Darmstadt, has obtained a CS PhD from Goethe University Frankfurt, and holds a Masters degree in Physics. The main vision behind his research is to transcend static machine learning systems towards adaptive and sustainable lifecycles.</p>
                        </span> 
                     </span>
                   </li>
@@ -411,26 +413,26 @@
                        </span> 
                     </span>
                  </li>
-                 <li id="tom">[15:00-16:00] Tom Rainforth: Talk TBA
+                 <li id="tom">[15:00-16:00] Tom Rainforth: Do Bayesian Neural Networks Need To Be Fully Stochastic?
                     <label for="tom1" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="tom1">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
+                          <p style="text-align: justify">Abstract: In this talk I will discuss whether the standard assumption of treating all the parameters in a Bayesian neural network stochastically is actually justified.  I walk explain how our recent work has given compelling theoretical and empirical evidence that this standard construction may be unnecessary.  From a theoretical perspective, I will demonstrate that expressive predictive distributions require only small amounts of stochasticity.  From an empirical perspective, I will explain how our investigations found no systematic benefit of full stochasticity across four different inference modalities and eight datasets. I will try to leave plenty of time at the end of the talk for debate on the subject!</p>
+                          <p style="text-align: justify">Bio: I am a Senior Researcher in Machine Learning (and from September, Associate Professor) in the Department of Statistics at the University of Oxford, where I run the <a href="https://rainml.uk/">RainML Research Lab</a>. My research covers a wide range of topics in and around machine learning and experimental design, with areas of particular interest including Bayesian experimental design, deep learning, representation learning, generative models, Monte Carlo methods, active learning, probabilistic programming, and variational inference.</p>
                        </span> 
                     </span>
                  </li>
     
                  <li>[16:00-16:30] Break</li>
     
-                 <li id="adam">[16:30-17:30] Adam White: Talk TBA
+                 <li id="adam">[16:30-17:30] Adam White: Continual Subtask Learning
                     <label for="adam1" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="adam1">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
+                          <p style="text-align: justify">Abstract: In many real-world problems the agent is much smaller than the vast world in which it must operate. In such scenarios, the world appears non-stationary to the agent, and thus we require agents capable of stable, non-convergent, never-ending learning. Successful agents must balance specializing their learning to the current situation with the need to learn many things over time which can be combined to learn yet new things--a concept known as scaffolding. This talk will review my lab's recent work on architectures and algorithms for learning many things.</p>
+                          <p style="text-align: justify">Bio: Adam is an assistant professor in the University of Alberta’s Department of Computing Science, a Canada CIFAR AI Chair, and the Director of Scientific Operations at the Alberta Machine Intelligence Institute (Amii).  He is also a Principal Investigator in the Reinforcement Learning & Artificial Intelligence (RLAI) Lab. Adam co-created the Reinforcement Learning Specialization, taken by over 85,000 students on Coursera. Adam's research is focused on understanding the fundamental principles of learning in continual learning settings, both simulated worlds and real-world industrial-control applications. Adam's group is deeply passionate about good empirical practices and new methodologies to help determine if our algorithms are ready for deployment in the real world.</p>
                        </span> 
                     </span>
                  </li>
