@@ -55,29 +55,38 @@
                <p>Afternoon Session (chair: Vincent Fortuin)</p>
 
                <ul class="w3-ul">
-                  <li id="tutorial1">[14:00-16:00] Tutorial by Emtiyaz Khan: Bayesian Learning Rule
-                    <label for="tutorial1d" class="read-more-trigger"> Details</label> 
-                    <input type="checkbox" class="read-more-state" id="tutorial1d">
-                    <span class="read-more-wrap">
-                       <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
-                       </span> 
-                    </span>
-                 </li>
-
+                  <li id="tutorial3">[14:00-15:00] Tutorial by Eugene Ndiaye on Conformal Prediction
+                     <label for="tutorial3d" class="read-more-trigger"> Details</label> 
+                     <input type="checkbox" class="read-more-state" id="tutorial3d">
+                     <span class="read-more-wrap">
+                        <span class="read-more-target">
+                           <p style="text-align: justify">Abstract: Introduction to the basics of Conformal Prediction.</p>
+                           <p style="text-align: justify">Bio: I am currently a researcher in the Machine Learning Group @Apple in Paris. I focus mainly on optimization and uncertainty quantification. I was previously a postdoctoral researcher both at Georgia Institute of Technology (USA) and Riken AIP (Japan). I hold a PhD in Applied Mathematics from University of Paris Saclay (France). My doctoral thesis focused on the design and analysis of faster and safer optimization algorithms for variable selection and hyperparameter calibration in high dimension.</p>
+                        </span> 
+                     </span>
+                     </li>
+                     <li id="eugene">[15:00-16:00] Eugene Ndiaye: From Conformal Predictions to Confidence Regions
+                        <label for="eugene1" class="read-more-trigger"> Details</label> 
+                        <input type="checkbox" class="read-more-state" id="eugene1">
+                        <span class="read-more-wrap">
+                           <span class="read-more-target">
+                              <p style="text-align: justify">Abstract: Conformal prediction methodologies have significantly advanced the quantification of uncertainties in predictive models. Yet, the construction of confidence regions for model parameters presents a notable challenge, often necessitating stringent assumptions regarding data distribution or merely providing asymptotic guarantees. We introduce a novel approach termed CCR, which employs a combination of conformal prediction intervals for the model outputs to establish confidence regions for model parameters. We present coverage guarantees under minimal assumptions on noise and that is valid in finite sample regime. Our approach is applicable to both split conformal predictions and black-box methodologies including full or cross-conformal approaches. In the specific case of linear models, the derived confidence region manifests as the feasible set of a Mixed-Integer Linear Program (MILP), facilitating the deduction of confidence intervals for individual parameters and enabling robust optimization. We empirically compare CCR to recent advancements in challenging settings such as with heteroskedastic and non-Gaussian noise.</p>
+                              <p style="text-align: justify">Bio: I am currently a researcher in the Machine Learning Group @Apple in Paris. I focus mainly on optimization and uncertainty quantification. I was previously a postdoctoral researcher both at Georgia Institute of Technology (USA) and Riken AIP (Japan). I hold a PhD in Applied Mathematics from University of Paris Saclay (France). My doctoral thesis focused on the design and analysis of faster and safer optimization algorithms for variable selection and hyperparameter calibration in high dimension.</p>
+                           </span> 
+                        </span>
+                     </li>
                  <li>[16:00-16:30] Break</li>
-
-                 <li id="matt">[16:30-17:30] Matt Jones: Talk TBA
-                    <label for="matt1" class="read-more-trigger"> Details</label> 
-                    <input type="checkbox" class="read-more-state" id="matt1">
-                    <span class="read-more-wrap">
-                       <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
-                       </span> 
-                    </span>
-                 </li>
+                 <li id="alex">[16:30-17:30] Alexander Immer: Advances in Bayesian Model Selection for Deep Learning
+                   <label for="alex1" class="read-more-trigger"> Details</label> 
+                   <input type="checkbox" class="read-more-state" id="alex1">
+                   <span class="read-more-wrap">
+                      <span class="read-more-target">
+                         <p style="text-align: justify">Abstract: Choosing optimal hyperparameters for deep learning can be highly expensive due to trial-and-error procedures and required expertise. Bayesian model selection can help to overcome such issues using gradient-based optimization and does not require a held-out validation set. However, it requires estimation and differentiation of the marginal likelihood, which is inherently intractable. In my talk, I will first discuss how scalable Laplace approximations enable Bayesian model selection for advanced applications. Further, I will demonstrate how to derive faster approximations using lower bounds and dualities.</p>
+                         <p style="text-align: justify">Bio: I am a last-year PhD student at ETH Zürich, Max Planck Institute for Intelligent Systems, and Google Research. I work on probabilistic deep learning with a focus on Bayesian model selection and scientific applications.</p>
+                      </span> 
+                   </span>
+                </li>
+                 
                </ul>
                <p style="text-align: right">[<a href="workshop_2024.html#program">Back to Program</a>]</p>
             </div> 
@@ -92,61 +101,44 @@
            <p>Morning Session (chair: Alexander Immer)</p>
 
            <ul class="w3-ul">
-              <li id="haavard">[10:00-11:00] Haavard Rue: Talk TBA
+              <li id="haavard">[10:00-11:00] Haavard Rue: Correcting Approximations using Variational Bayes
                 <label for="haavard1" class="read-more-trigger"> Details</label> 
                 <input type="checkbox" class="read-more-state" id="haavard1">
                 <span class="read-more-wrap">
                    <span class="read-more-target">
-                      <p style="text-align: justify">Abstract: TBA</p>
-                      <p style="text-align: justify">Bio: TBA</p>
+                      <p style="text-align: justify">Abstract: I'll discuss how to use Variational Bayes (VB) to correct approximations rather than using VB to get approximations itself.</p>
+                      <p style="text-align: justify">Bio: Haavard Rue is a professor of Statistics at CEMSE Division, at the King Abdullah University of Science and Technology in Saudi Arabia, since 2017, and before that a professor at the Department of Mathematical Sciences at the
+                        Norwegian University for Science and Technology. He was named a highly cited researcher according to the Highly Cited Researchers in the years 2019--2021, from the Web of Science Group, gave the Bahadur Memorial Lectures at Univ of Chicago
+                        in 2018, and in 2021  awarded the Royal Statistical Society (RSS) Guy Medal in Silver for his work on Integrated Nested Laplace Approximations (INLA) and the Stochastic Partial Differential Equation (SPDE) approach represent and
+                        compute with Gaussian fields. His research is mainly centred around the "R-INLA project", see <a href="www.r-inla.org">www.r-inla.org.</a></p>
                    </span> 
                 </span>
               </li>
               
               <li>[11:00-11:30] Break</li>
               
-              <li id="tutorial3">[11:30-12:30] Tutorial by Eugene Ndiaye on Conformal Prediction
-               <label for="tutorial3d" class="read-more-trigger"> Details</label> 
-               <input type="checkbox" class="read-more-state" id="tutorial3d">
+              <li id="tutorial4">[11:30-12:30] Tutorial by Thomas Moellenhoff on Convex Duality
+               <label for="tutorial4d" class="read-more-trigger"> Details</label> 
+               <input type="checkbox" class="read-more-state" id="tutorial4d">
                <span class="read-more-wrap">
                   <span class="read-more-target">
                      <p style="text-align: justify">Abstract: TBA</p>
                      <p style="text-align: justify">Bio: TBA</p>
                   </span> 
                </span>
-               </li>
+            </li>
             <li>[12:30-14:00] Lunch Break (On Your Own) </li>
+
+              
+
            </ul>
 
            <p>Afternoon Session (chair: Eugene Ndiaye)</p>
 
            <ul class="w3-ul">
-            <li id="eugene">[14:00-15:00] Eugene Ndiaye: From Conformal Predictions to Confidence Regions
-               <label for="eugene1" class="read-more-trigger"> Details</label> 
-               <input type="checkbox" class="read-more-state" id="eugene1">
-               <span class="read-more-wrap">
-                  <span class="read-more-target">
-                     <p style="text-align: justify">Abstract: Conformal prediction methodologies have significantly advanced the quantification of uncertainties in predictive models. Yet, the construction of confidence regions for model parameters presents a notable challenge, often necessitating stringent assumptions regarding data distribution or merely providing asymptotic guarantees. We introduce a novel approach termed CCR, which employs a combination of conformal prediction intervals for the model outputs to establish confidence regions for model parameters. We present coverage guarantees under minimal assumptions on noise and that is valid in finite sample regime. Our approach is applicable to both split conformal predictions and black-box methodologies including full or cross-conformal approaches. In the specific case of linear models, the derived confidence region manifests as the feasible set of a Mixed-Integer Linear Program (MILP), facilitating the deduction of confidence intervals for individual parameters and enabling robust optimization. We empirically compare CCR to recent advancements in challenging settings such as with heteroskedastic and non-Gaussian noise.</p>
-                     <p style="text-align: justify">Bio: I am currently a researcher in the Machine Learning Group @Apple in Paris. I focus mainly on optimization and uncertainty quantification. I was previously a postdoctoral researcher both at Georgia Institute of Technology (USA) and Riken AIP (Japan). I hold a PhD in Applied Mathematics from University of Paris Saclay (France). My doctoral thesis focused on the design and analysis of faster and safer optimization algorithms for variable selection and hyperparameter calibration in high dimension.</p>
-                  </span> 
-               </span>
-            </li>
-
-             <li id="tutorial4">[15:00-16:00] Tutorial by Thomas Moellenhoff on Convex Duality
-                <label for="tutorial4d" class="read-more-trigger"> Details</label> 
-                <input type="checkbox" class="read-more-state" id="tutorial4d">
-                <span class="read-more-wrap">
-                   <span class="read-more-target">
-                      <p style="text-align: justify">Abstract: TBA</p>
-                      <p style="text-align: justify">Bio: TBA</p>
-                   </span> 
-                </span>
-             </li>
-
-             <li>[16:00-16:30] Break</li>
-             <li id="alex">[16:30-17:30] Alexander Immer: Talk TBA
-               <label for="alex1" class="read-more-trigger"> Details</label> 
-               <input type="checkbox" class="read-more-state" id="alex1">
+            <li id="tutorial1">[14:00-16:00] Tutorial by Emtiyaz Khan: Bayesian Learning Rule
+               <label for="tutorial1d" class="read-more-trigger"> Details</label> 
+               <input type="checkbox" class="read-more-state" id="tutorial1d">
                <span class="read-more-wrap">
                   <span class="read-more-target">
                      <p style="text-align: justify">Abstract: TBA</p>
@@ -154,6 +146,23 @@
                   </span> 
                </span>
             </li>
+            
+            <li>[16:00-16:30] Break</li>
+            
+            <li id="matt">[16:30-17:30] Matt Jones: Talk TBA
+               <label for="matt1" class="read-more-trigger"> Details</label> 
+               <input type="checkbox" class="read-more-state" id="matt1">
+               <span class="read-more-wrap">
+                  <span class="read-more-target">
+                     <p style="text-align: justify">Abstract: TBA</p>
+                     <p style="text-align: justify">Bio: TBA</p>
+                  </span> 
+               </span>
+            </li>
+
+            
+
+             
              
            </ul>
            <p style="text-align: right">[<a href="workshop_2024.html#program">Go to Program</a>]</p>
@@ -183,13 +192,15 @@
                   
                   <li>[11:00-11:30] Break</li>
     
-                  <li id="jonghyun">[11:30-12:00] Jonghyun Choi: Talk TBA 
+                  <li id="jonghyun">[11:30-12:00] Jonghyun Choi: Practical Set-ups and a Method for Continual Learning
                      <label for="jonghyun1" class="read-more-trigger"> Details</label> 
                      <input type="checkbox" class="read-more-state" id="jonghyun1">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-                           <p style="text-align: justify">Abstract: TBA</p>
-                           <p style="text-align: justify">Bio: TBA</p>
+                           <p style="text-align: justify">Abstract: Prevalent setups in continual learning often fall short of practical applicability, posing unrealistic assumptions and constraints. First, I will try to address these gaps by presenting various continual learning setups (mostly for class incremental learning) that are more realistic and feasible, on which we would need to evaluate our algorithms. Then, I will discuss one of our approaches to address a continual learning (e.g., class incremental learning) in a bit realistic set-up, online continuous data stream and beyond.</p>
+                           <p style="text-align: justify">Bio: Jonghyun Choi received the B.S. and M.S. degrees in electrical engineering and computer science from Seoul National University, Seoul, South Korea in 2003 and 2008 respectively.
+                              He received a Ph.D. degree from University of Maryland, College Park in 2015, under the supervision of Prof. Larry S. Davis. He is currently an associate professor at Seoul National University, Seoul, South Korea. During his PhD, he has worked as a research intern in a number of research labs including US Army Research Lab (2012), Adobe Research (2013), Disney Research Pittsburgh (2014) and Microsoft Research Redmond (2014).
+                              He was a senior researcher at Comcast Applied AI Research, Washington, DC from 2015 to 2016. He was a research scientist at Allen Institute for Artificial Intelligence (AI2), Seattle, WA from 2016 to 2018 and is currently an affiliated research scientist. He was an associate professor at Yonsei University, Seoul, South Korea from 2022-2024, and an assistant professor at GIST, Gwangju, South Korea from 2018-2022. He serves as an area chair at IEEE/CVF Conference of CVPR and WACV, NeurIPS, BMVC, and was a paper review chair at CoLLAs 2023, and an associate editor of IEEE Transactions on PAMI. His research interest includes visual recognition using weakly supervised data for semantic understanding of images and videos (e.g., continual learning, unlearning) and visual understanding for edge devices and household robots.</p>
                         </span> 
                      </span>
                   </li>
@@ -254,13 +265,13 @@
                   
                   <li>[11:00-11:30] Break</li>
     
-                  <li id="siddharth">[11:30-12:00] Siddharth Swaroop: Talk TBA
+                  <li id="siddharth">[11:30-12:00] Siddharth Swaroop: Federated learning with a Laplace approximation
                      <label for="siddharth1" class="read-more-trigger"> Details</label> 
                      <input type="checkbox" class="read-more-state" id="siddharth1">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-                           <p style="text-align: justify">Abstract: TBA</p>
-                           <p style="text-align: justify">Bio: TBA</p>
+                           <p style="text-align: justify">Abstract: In federated learning, data is split heterogeneously over local clients, and our goal is to train a global model while minimising communication cost between the global server and local clients. Techniques usually suffer from client drift, where optimising on a local client leads to overfitting on its data. We introduce FedLap, a method derived from a Bayesian approach to federated learning. FedLap enjoys desirable properties of existing algorithms, including recent algorithms that overcome client drift. Additionally, our Bayesian perspective (i) provides interpretations of hyperparameters, and (ii) allows us to improve FedLap by improving the Bayesian approximation. Specifically, we improve FedLap by including Gaussian covariances and function-space information, linking our method to both Bayesian techniques and Federated Distillation methods.</p>
+                           <p style="text-align: justify">Bio: Siddharth Swaroop is a postdoctoral fellow at the Data to Actionable Knowledge Lab at Harvard University. His current research focusses on probabilistic deep learning for a broad range of knowledge adaptation problems (such as continual learning, federated learning, and knowledge distillation), as well as reinforcement learning problems that arise in human-AI settings. He also works on machine learning interpretability, privacy, and Large Language Model biases. Siddharth obtained his PhD in machine learning at the University of Cambridge, supervised by Professor Richard Turner, where he was awarded a Microsoft Research EMEA PhD Award and an Honorary Vice-Chancellor’s Award from the Cambridge Trust.</p>
                         </span> 
                      </span>
                   </li>
@@ -271,16 +282,18 @@
                <p>Afternoon Session</p>
     
                <ul class="w3-ul">
-                 <li id="tutorial7">[14:00-15:00] Tutorial by Hossein Mobahi on Optimization for Deep Learning 
-                    <label for="tutorial7d" class="read-more-trigger"> Details</label> 
-                    <input type="checkbox" class="read-more-state" id="tutorial7d">
-                    <span class="read-more-wrap">
-                       <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
-                       </span> 
-                    </span>
-                 </li>
+                  <li id="rio">[14:00-15:00] Rio Yokota: Talk TBA
+                     <label for="rio1" class="read-more-trigger"> Details</label> 
+                     <input type="checkbox" class="read-more-state" id="rio1">
+                     <span class="read-more-wrap">
+                        <span class="read-more-target">
+                           <p style="text-align: justify">Abstract: TBA</p>
+                           <p style="text-align: justify">Bio: TBA</p>
+                        </span> 
+                     </span>
+                  </li>
+
+
                  <li id="poster1">[15:00-16:00] Poster Session 1
                     
                  </li>
@@ -373,13 +386,13 @@
                <p>Morning Session (chair: Adam White)</p>
     
                <ul class="w3-ul">
-                  <li id="razvan">[10:00-11:00] Razvan Pascanu: Talk TBA
+                  <li id="razvan">[10:00-11:00] Razvan Pascanu: An optimization perspective on Continual Learning
                     <label for="razvan1" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="razvan1">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: </p>
-                          <p style="text-align: justify">Bio: </p>
+                          <p style="text-align: justify">Abstract: Continual/Lifelong Learning is a topic that has been gaining momentum in the last few years, however its impact on the machine learning community is not yet clear. In this talk I will rely on an optimization perspective to think about continual learning, describing briefly two distinct problems that had been studied in this space: catastrophic forgetting and loss of plasticity. I will argue that loss of plasticity can be understood from a signal propagation point of view, and show some recent observations that we made on the potential causes of this phenomenon. Additionally, taking inspiration from online learning, I will present a simple alteration of stochastic gradient descent that allows a form of soft reset of parameters which can be used to alleviate the problem. Finally I will discuss why catastrophic forgetting, viewed as interference during learning, is problematic even if the goal is not in revisiting tasks, and how it could potentially be seen as a source of inefficiency in learning. I will conclude with some final thoughts on the potential impact that CL is having and could potentially have for machine learning.</p>
+                          <p style="text-align: justify">Bio: Razvan Pascanu has been a research scientist at Google DeepMind since 2014. Before this, he did his PhD in Montréal with prof. Yoshua Bengio, working on understanding deep networks, recurrent models and optimization. Since he joined Google DeepMind he has also had significant contributions in deep reinforcement learning, continual learning, meta-learning, graph neural networks as well as continuing his research agenda of understanding deep learning, recurrent models and optimization. Please see his scholar page for specific contributions. He is also actively promoting AI research and education as a main organizer of Conference on Life-long Learning Agents (<a href="https://lifelong-ml.cc">CoLLAs</a>) , Eastern European Machine Learning Summer School (<a href="https://www.eeml.eu">EEML</a>) and <a href="https://www.workshops.eeml.eu">workshops</a> as well as different workshops at NeurIPS, ICML and ICLR.</p>
                        </span> 
                     </span>
                   </li>
@@ -450,7 +463,21 @@
                <p>Morning Session (chair: Adam White)</p>
     
                <ul class="w3-ul">
-                  <li id="hossein">[10:00-11:00] Hossein Mobahi: Neglected Hessian component explains mysteries in Sharpness regularization
+
+                  <li id="tutorial7">[10:00-11:00] Tutorial by Hossein Mobahi on Optimization for Deep Learning 
+                     <label for="tutorial7d" class="read-more-trigger"> Details</label> 
+                     <input type="checkbox" class="read-more-state" id="tutorial7d">
+                     <span class="read-more-wrap">
+                        <span class="read-more-target">
+                           <p style="text-align: justify">Abstract: TBA</p>
+                           <p style="text-align: justify">Bio: TBA</p>
+                        </span> 
+                     </span>
+                  </li>
+                  
+                  <li>[11:00-11:30] Break</li>
+
+                  <li id="hossein">[11:30-12:30] Hossein Mobahi: Neglected Hessian component explains mysteries in Sharpness regularization
                     <label for="hossein1" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="hossein1">
                     <span class="read-more-wrap">
@@ -461,32 +488,33 @@
                     </span>
                   </li>
                   
-                  <li>[11:00-11:30] Break</li>
+                  <li>[12:30-14:00] Lunch Break (On Your Own) </li>                  
     
-                  <li id="arindam">[11:30-12:00] Arindam Banerjee: Talk TBA
-                     <label for="arindam1" class="read-more-trigger"> Details</label> 
-                     <input type="checkbox" class="read-more-state" id="arindam1">
-                     <span class="read-more-wrap">
-                        <span class="read-more-target">
-                           <p style="text-align: justify">Abstract: TBA</p>
-                           <p style="text-align: justify">Bio: TBA</p>
-                        </span> 
-                     </span>
-                  </li>
+                 
     
-                  <li>[12:30-14:00] Lunch Break (On Your Own) </li>
+
                </ul>
     
                <p>Afternoon Session</p> 
                <ul class="w3-ul">
-                 <li id="poster3">[14:00-15:00] Poster Session 3
-                 </li>
-                 <li id="poster4">[15:00-16:00] Poster Session 4
+                  
+                  <li id="arindam">[11:30-12:00] Arindam Banerjee: Benefits of Structure and Randomness in Deep Learning
+                     <label for="arindam1" class="read-more-trigger"> Details</label> 
+                     <input type="checkbox" class="read-more-state" id="arindam1">
+                     <span class="read-more-wrap">
+                        <span class="read-more-target">
+                           <p style="text-align: justify">Abstract: We consider the high-dimensional geometry associated with the first and second order structure of deep learning (DL) losses. We briefly review ongoing work which is starting to highlight the importance of such structure. We then introduce three lines of advances which are utilizing such structure along with randomness. First, we revisit the challenges of differentially private (DP) DL, and demonstrate how DP-DL with gradient projections using the first order geometry hold considerable promise. Second, we consider online optimization with DL and, surprisingly, establish O(log T) regret bounds even though the problem does not fall under the standard online convex optimization paradigm. The development utilizes the second order geometry of DL, along with some unique use of random perturbations. Third, we introduce a new approach to generalization bounds which directly use the geometry in terms of the Gaussian width of gradients, which is shown to be related to the eigenvalue decay of the loss Hessian as well as the Gaussian width of the featurizer. Thus, learning algorithms which lead to fast decaying Hessian eigenvalues or feature selection in terms of having small number of active features while maintaining low training loss is expected to generalize well.</p>
+                           <p style="text-align: justify">Bio: Arindam Banerjee is a Founder Professor at the Department of Computer Science, University of Illinois Urbana-Champaign. His research interests are in machine learning. His current research focuses on computational and statistical aspects of over-parameterized models including deep learning, spatial and temporal data analysis, generative models, and sequential decision making problems. His work also focuses on applications of machine learning in complex real-world and scientific domains including problems in climate science and ecology. He has won several awards, including the NSF CAREER award (2010), the IBM Faculty Award (2013), and seven best paper awards in top-tier venues.</p>
+                        </span> 
+                     </span>
+                  </li>
+
+                 <li id="poster3">[15:00-16:00] Poster Session 3
                  </li>
     
                  <li>[16:00-16:30] Break</li>
     
-                 <li id="poster5">[16:30-17:30] Poster Session 5
+                 <li id="poster4">[16:30-17:30] Poster Session 4
                  </li>
                  
                </ul>
@@ -515,13 +543,13 @@
                   
                   <li>[11:00-11:30] Break</li>
     
-                  <li id="daiki">[11:30-12:00] Daiki Chijiwa: Talk TBA
+                  <li id="daiki">[11:30-12:00] Daiki Chijiwa: Transferring Learning Trajectories of Neural Networks
                      <label for="daiki1" class="read-more-trigger"> Details</label> 
                      <input type="checkbox" class="read-more-state" id="daiki1">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-                           <p style="text-align: justify">Abstract: TBA</p>
-                           <p style="text-align: justify">Bio: TBA</p>
+                           <p style="text-align: justify">Abstract: In this talk, I will introduce our new problem called Learning Transfer, which can be seen as a complementary problem to Transfer Learning. This problem is formulated as the transfer problem of a learning trajectory from one initialization to another initialization. We leverage the permutation symmetry of neural networks, and provide a theoretical evidence of the existence of appropriate permutations for learning transfer in the case of overparameterized 2-layered MLPs. We also derive the first algorithm to solve this problem approximately in an efficient way, and demonstrate its application to reduce the cost of updating the underlying pre-trained model of fine-tuned models.</p>
+                           <p style="text-align: justify">Bio: Daiki Chijiwa is a researcher at NTT, Computer and Data Science Laboratories in Tokyo, where he is currently working on both theoretical and empirical research in deep learning. Before joining NTT in 2019, he received an MSc degree in Mathematical Sciences from The University of Tokyo, where he worked on algebraic geometry and Hodge theory.</p>
                         </span> 
                      </span>
                   </li>
@@ -531,13 +559,13 @@
     
                <p>Afternoon Session (chair: Yingzhen Li)</p>
                <ul class="w3-ul">
-                <li id="zelda">[14:00-15:00] Zelda Mariet: Talk TBA
+                <li id="zelda">[14:00-15:00] Zelda Mariet: A duality perspective on the bias-variance decomposition
                     <label for="zelda1" class="read-more-trigger"> Details</label> 
                     <input type="checkbox" class="read-more-state" id="zelda1">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: TBA</p>
-                          <p style="text-align: justify">Bio: TBA</p>
+                          <p style="text-align: justify">Abstract: Ensembles are a straightforward, remarkably effective method for improving the accuracy,calibration, and robustness of models on classification tasks; yet, the reasons that underlie their success remain an active area of research. We build upon the extension to the bias-variance decomposition by Pfau (2013) in order to gain crucial insights into the behavior of ensembles of classifiers. Introducing a dual reparameterization of the bias-variance tradeoff, we first derive generalized laws of total expectation and variance for nonsymmetric losses typical of classification tasks. Comparing conditional and bootstrap bias/variance estimates, we then show that conditional estimates necessarily incur an irreducible error. Next, we show that ensembling in dual space reduces the variance and leaves the bias unchanged, whereas standard ensembling can arbitrarily affect the bias. Empirically, standard ensembling reducesthe bias, leading us to hypothesize that ensembles of classifiers may perform well in part because of this unexpected reduction.We conclude by an empirical analysis of recent deep learning methods that ensemble over hyperparameters, revealing that these techniques indeed favor bias reduction. This suggests that, contrary to classical wisdom, targeting bias reduction may be a promising direction for classifier ensembles. </p>
+                          <p style="text-align: justify">Bio: Zelda Mariet is a cofounder of and Principal Research Scientist at Bioptimus, working on multi-scale foundation models for biology. Prior to joining, Zelda was at Google DeepMind, where she worked on the theory and practice of reliability for deep learning. Zelda obtained her PhD from MIT, with a dissertation centered on the beautiful world of negatively dependent measures and strongly Rayleigh polynomials.</p>
                        </span> 
                     </span>
                  </li>
