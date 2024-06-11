@@ -150,13 +150,13 @@
             
             <li>[16:00-16:30] Break</li>
             
-            <li id="matt">[16:30-17:30] Matt Jones: Talk TBA
+            <li id="matt">[16:30-17:30] Matt Jones: Bayesian Online Natural Gradient (BONG)
                <label for="matt1" class="read-more-trigger"> Details</label> 
                <input type="checkbox" class="read-more-state" id="matt1">
                <span class="read-more-wrap">
                   <span class="read-more-target">
-                     <p style="text-align: justify">Abstract: TBA</p>
-                     <p style="text-align: justify">Bio: TBA</p>
+                     <p style="text-align: justify">Abstract: We propose a novel approach to sequential Bayesian inference based on variational Bayes. The standard variational loss is a sum of expected negative log-likelihood and KL divergence from the prior. Our key insight is that, in the online setting, we can drop the KL term and instead perform a single step of natural gradient descent on the expected NLL, starting from the prior predictive (which comes from the posterior at the previous timestep). Thus instead of explicitly regularizing to the prior, we do so implicitly. We prove this method recovers exact Bayesian updating if the model is conjugate, and empirically outperforms other online VB methods in the non-conjugate such as online learning for neural networks, especially when controlling for computational costs.</p>
+                     <p style="text-align: justify">Bio: Professor of Psychology at University of Colorado and recent Visiting Faculty at Google Brain/DeepMind</p>
                   </span> 
                </span>
             </li>
@@ -399,13 +399,15 @@
                   
                   <li>[11:00-11:30] Break</li>
     
-                  <li id="rupam">[11:30-12:30] Rupam Mahmood: Talk TBA
+                  <li id="rupam">[11:30-12:30] Rupam Mahmood: Continual Robot Learning Under Computational Constraints
                      <label for="rupam1" class="read-more-trigger"> Details</label> 
                      <input type="checkbox" class="read-more-state" id="rupam1">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-                           <p style="text-align: justify">Abstract: TBA</p>
-                           <p style="text-align: justify">Bio: TBA</p>
+                           <p style="text-align: justify">Abstract: Current AI systems predominantly learn offline, that is, based on pre-existing data or simulations, using vast computational resources. In continual learning, we take the position that the world always gives the learner new information and situations to learn from, making offline learning never sufficient. Hence, unlike current AI systems, a continual learning system learns in real time from a perpetual stream of data while being used in deployment. 
+<br>
+A significant challenge of real-time learning is the often severe computational constraints of deployed systems. In this presentation, I focus on onboard reinforcement learning of control for mobile robots, where the resource constraints of continual learning are among the most extreme. Using robot learning examples, I demonstrate how existing deep reinforcement learning algorithms are unsuitable for onboard learning due to the computational limitations of onboard devices even for single-task learning, let alone continual learning. I argue that the bottleneck is an indispensable part of continual learning and deep reinforcement learning algorithms—namely, a buffer to replay and learn from past samples. I then present my recent works on continual learning that make significant steps to achieve deep learning with small or no replay buffers.</p>
+                           <p style="text-align: justify">Bio: Rupam Mahmood is an Assistant Professor in the Department of Computing Science at the University of Alberta, a Canada CIFAR AI Chair, and a Fellow at the Alberta Machine Intelligence Institute (Amii). His work intersects reinforcement learning, continual learning, and robot learning. Mahmood focuses on developing deep representation learning algorithms to address issues of continual learning such as scalability, catastrophic forgetting, and loss of plasticity, with the ultimate goal of building autonomous continual learning systems such as freely-living robots. Before joining UAlberta, Mahmood led the AI Research team at the robotics company Kindred AI, where he developed SenseAct, the first open-source toolkit and benchmark task suite for reproducible real-time learning with various physical robots.</p>
                         </span> 
                      </span>
                   </li>
