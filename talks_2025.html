@@ -268,7 +268,7 @@
                     <input type="checkbox" class="read-more-state" id="CREST1.2d">
                     <span class="read-more-wrap">
                        <span class="read-more-target">
-                          <p style="text-align: justify">Abstract: Knowledge Adaptation as Posterior Correction</p>
+                          <p style="text-align: justify">Abstract: Humans and animals have a natural ability to autonomously learn and continually adapt, but modern AI models, despite their amazing performance, cannot do so and remain extremely costly to train. I will present a new learning paradigm called Adaptive Bayesian Intelligence to bridge this gap. I will show that a wide range of adaptive methods can all be seen as different ways of “correcting” the approximate posteriors. Better posteriors lead to smaller corrections, which in turn imply faster and cheaper adaptation. The result is obtained by using a dual-perspective of the Bayesian Learning Rule (Khan and Rue, 2023), giving rise to a new Bayesian-Duality principle. I will demonstrate the effectiveness of the new principle on continual and federated deep learning, as well as merging and finetuning of LLMs.</p>
 			  <p style="text-align: justify">Bio:</p>
                        </span> 
                     </span>
@@ -280,8 +280,8 @@
                      <input type="checkbox" class="read-more-state" id="CREST2d">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-			  <p style="text-align: justify">Abstract:</p>
-			  <p style="text-align: justify">Bio:</p>
+			  <p style="text-align: justify">Abstract: Variational learning with an Improved Variational Online Newton method (IVON) can consistently match or outperform Adam for training large networks such as GPT-2 and ResNets from scratch. IVON’s computational costs are nearly identical to Adam but its predictive uncertainty is better. The talk gives a broad overview of several projects which have been using IVON since its publication last year. In particular, I will talk about a theoretical analysis of IVON’s promising performance, connections to adaptive label smoothing, and its usefulness for multimodal models, language generation with LLMs and federated learning.</p>
+			  <p style="text-align: justify">Bio (Thomas): Thomas Möllenhoff received his PhD in Informatics from the Technical University of Munich in 2020. From 2020 to 2023, he was a post-doc in the Approximate Bayesian Inference Team at RIKEN. Since 2023 he works at RIKEN as a research scientist and since 2025 as a senior research scientist. His research focuses on optimization and Bayesian deep learning and has been awarded several times, including the Best Paper Honorable Mention award at CVPR 2016 and a first-place at the NeurIPS 2021 Challenge on Approximate Inference.</p>
                         </span> 
                      </span>
                   </li>
@@ -291,24 +291,35 @@
                <p>Afternoon Session (chair: Jonghyun Choi)</p>
             
                <ul class="w3-ul">
-                  <li id="CREST3">[14:00-15:00] CREST Talk 3: Thomas Moellenhoff and Siddharth Swaroop: Federated ADMM from Bayesian Duality
+                  <li id="CREST3">[14:00-14:30] CREST Talk 3.1: Siddharth Swaroop: Siddharth Swaroop - Connecting Federated ADMM to Bayes
                      <label for="CREST3d" class="read-more-trigger"> Details</label> 
                      <label class="read-more-trigger"><a href='https://youtu.be/' target='blank'>Video</a></label>
                      <input type="checkbox" class="read-more-state" id="CREST3d">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-			  <p style="text-align: justify">Abstract:</p>
+			  <p style="text-align: justify">Abstract: We provide new connections between two distinct federated learning approaches based on (i) ADMM and (ii) Variational Bayes (VB), and propose new variants by combining their complementary strengths. Specifically, we show that the dual variables in ADMM naturally emerge through the 'site' parameters used in VB with isotropic Gaussian covariances. Using this, we derive two versions of ADMM from VB that use flexible covariances and functional regularisation, respectively. Through numerical experiments, we validate the improvements obtained in performance. The work shows connection between two fields that are believed to be fundamentally different and combines them to improve federated learning.</p>
 			  <p style="text-align: justify">Bio:</p>
                         </span> 
                      </span>
                   </li>
-                  <li id="CREST4">[15:00-15:15] CREST Talk 4.1: Kenichi: Introduction of the Math Team and Lie Group Update Rule
+                  <li id="CREST3.2">[14:30-15:00] CREST Talk 3.2: Thomas Moellenhoff: Federated ADMM from Bayesian Duality
+                     <label for="CREST3.2d" class="read-more-trigger"> Details</label> 
+                     <label class="read-more-trigger"><a href='https://youtu.be/' target='blank'>Video</a></label>
+                     <input type="checkbox" class="read-more-state" id="CREST3.2d">
+                     <span class="read-more-wrap">
+                        <span class="read-more-target">
+			  <p style="text-align: justify">Abstract: ADMM is a popular method for federated deep learning which originated in the 1970s and, even though many new variants of it have been proposed since then, its core algorithmic structure has remained unchanged. In this talk, we will introduce a structure called Bayesian Duality which exploits a duality of the posterior distributions obtained by solving a variational-Bayesian reformulation of the original problem. We show that this naturally recovers the original ADMM when isotropic Gaussian posteriors are used, and yields non-trivial extensions for other posterior forms. For instance, full-covariance Gaussians lead to Newton-like variants of ADMM, while diagonal covariances result in a cheap Adam-like variant. This is especially useful to handle heterogeneity in federated deep learning, giving up to 7% accuracy improvements over recent baselines.</p>
+			  <p style="text-align: justify">Bio: Thomas Möllenhoff received his PhD in Informatics from the Technical University of Munich in 2020. From 2020 to 2023, he was a post-doc in the Approximate Bayesian Inference Team at RIKEN. Since 2023 he works at RIKEN as a research scientist and since 2025 as a senior research scientist. His research focuses on optimization and Bayesian deep learning and has been awarded several times, including the Best Paper Honorable Mention award at CVPR 2016 and a first-place at the NeurIPS 2021 Challenge on Approximate Inference.</p>
+                        </span> 
+                     </span>
+                  </li>
+                  <li id="CREST4">[15:00-15:15] CREST Talk 4.1: Kenichi: Introduction of the Math Team and Lie Group Update Rule (with Akinori Tanaka)
                      <label for="CREST4d" class="read-more-trigger"> Details</label> 
                      <label class="read-more-trigger"><a href='https://youtu.be/' target='blank'>Video</a></label>
                      <input type="checkbox" class="read-more-state" id="CREST4d">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-			  <p style="text-align: justify">Abstract:</p>
+                            <p style="text-align: justify">Abstract: In this talk, I will explain the role played by the Mathematical Science Team at RIKEN AIP and some of the things we have been working on.  I will talk about my original research field of arithmetic theory, and the application of such thinking to the field of statistical mechanics.  Within the first part of my talk, Akinori Tanaka of our team will give a 5min. introduction about his research.  Then I will give a short introduction to the theory of Lie Group Updates -- by members of Emti's team and our team, Mehmet, Thomas, Koiichi, and Emti.</p>
 			  <p style="text-align: justify">Bio:</p>
                         </span> 
                      </span>
@@ -319,7 +330,7 @@
                      <input type="checkbox" class="read-more-state" id="CREST4.2d">
                      <span class="read-more-wrap">
                         <span class="read-more-target">
-			  <p style="text-align: justify">Abstract:</p>
+			  <p style="text-align: justify">Abstract: In the Lie-group Bayesian learning framework, assuming a log-normal distribution over the weights leads to multiplicative weight dynamics, including both parameter updates and noise injection. We propose a novel Log-Normal Multiplicative Dynamics (LMD) optimizer that scales to models at the scale of Vision Transformer (ViT) and GPT-2. We show that leveraging LMD enables forward matrix multiplications during training to be executed in low-precision formats without significant performance degradation in large neural networks.</p>
 			  <p style="text-align: justify">Bio:</p>
                         </span> 
                      </span>
