@@ -44,3 +44,13 @@ html {
     color: black;
     font-size: 10pt;
 }
+
+.cardname {
+  line-height: 1.1em;
+  min-height: 2.2em;
+  display: block;
+  margin-bottom: 0;
+}
+.cardname + p {
+  margin-top: 0em;
+}
