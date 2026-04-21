@@ -54,3 +54,9 @@ html {
 .cardname + p {
   margin-top: 0em;
 }
+
+.card img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+}
