@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="file.css" />
     <link rel="stylesheet" href="people.css" />
     <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="schedule.css" />
   </head>
   <body bgcolor="#E5E4E2">
     <header id="top" class="w3-container w3-padding" id="myHeader">
@@ -295,7 +296,6 @@
     </div>
     <!-- end of row -->
 
-    <!--
     <div class="w3-row">
       <div class="w3-container w3-padding w3-auto" style="width: 100%">
         <div
@@ -303,210 +303,92 @@
           class="w3-card w3-padding w3-border w3-white w3-round-large"
         >
           <h4 style="font-weight: bold">Program</h4>
+          <!--
           [<a href="talks_2026.html">The detailed program</a>]
+          -->
 
-          <table>
-            <tbody>
-              <tr>
-                <td></td>
-                <td>June 23</td>
-                <td rowspan="11"></td>
-                <td>June 24</td>
-                <td rowspan="11"></td>
-                <td>June 25</td>
-                <td rowspan="11"></td>
-                <td>June 26</td>
-                <td rowspan="11"></td>
-                <td>June 27</td>
-              </tr>
-              <tr>
-                <td>09:50-10:00</td>
-                <td class="break"></td>
+          <div class="schedule-wrapper">
+            <div class="day-column" style="flex: 0 0 100px">
+              <div class="header">Time</div>
+              <div class="time-slot">09:50-10:00</div>
+              <div class="time-slot">10:00-11:00</div>
+              <div class="time-slot">11:00-11:30</div>
+              <div class="time-slot">11:30-12:30</div>
+              <div class="time-slot">12:30-14:00</div>
+              <div class="time-slot">14:00-15:00</div>
+              <div class="time-slot">15:00-16:00</div>
+              <div class="time-slot">16:00-16:30</div>
+              <div class="time-slot">16:30-18:00</div>
+            </div>
 
-                <td class="break"></td>
+            <div class="day-column">
+              <div class="header">June 22</div>
+              <div class="event-box none"></div>
+              <div class="event-box discussion">Discussion Topic 1</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box discussion">Discussion Topic 2</div>
+              <div class="event-box break">Lunch</div>
+              <div class="event-box discussion">Discussion Topic 3</div>
+              <div class="event-box discussion">Discussion Topic 4</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box discussion">Free Discussion</div>
+            </div>
 
-                <td class="break"></td>
+            <div class="day-column">
+              <div class="header">June 23</div>
+              <div class="event-box none"></div>
+              <div class="event-box discussion">Discussion Topic 5</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box discussion">Discussion Topic 6</div>
+              <div class="event-box break">Lunch</div>
+              <div class="event-box discussion">Discussion Topic 7</div>
+              <div class="event-box discussion">Discussion Topic 8</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box discussion">Free Discussion</div>
+            </div>
 
-                <td class="break"></td>
+            <div class="day-column">
+              <div class="header">June 24</div>
+              <div class="event-box special">Masashi Sugiyama</div>
+              <div class="event-box talk">Invited Talk 1</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box talk">Invited Talk 2</div>
+              <div class="event-box break">Lunch</div>
+              <div class="event-box talk">Invited Talk 3</div>
+              <div class="event-box poster">Poster Session</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box poster">Poster Session</div>
+            </div>
 
-                <td class="talk w3-hover-blue"><a>Masashi Sugiyama</a></td>
-              </tr>
-              <tr>
-                <td>10:00-11:00</td>
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial1"
-                    >Discussion: Bayes-duality</a
-                  >
-                </td>
+            <div class="day-column">
+              <div class="header">June 25</div>
+              <div class="event-box none"></div>
+              <div class="event-box crest">CREST talks</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box crest">CREST talks</div>
+              <div class="event-box break">Lunch</div>
+              <div class="event-box crest">CREST talks</div>
+              <div class="event-box crest">CREST talks</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box poster">Poster Session</div>
+            </div>
 
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial6"
-                    >Discussion: Influence estimation</a
-                  >
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session1">Rebekka Burkholz</a>
-                </td>
-
-                <td class="CREST w3-hover-blue">
-                  <a href="talks_2026.html#CREST1">CREST: Emti, Thomas, Nico</a>
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session5">Razvan Pascanu</a>
-                </td>
-              </tr>
-              <tr>
-                <td>11:00-11:30</td>
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-              </tr>
-              <tr>
-                <td>11:30-12:30</td>
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial2"
-                    >Discussion: Bayes-duality</a
-                  >
-                </td>
-
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial7"
-                    >Discussion: Federated Learning</a
-                  >
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session2">André Martins</a>
-                </td>
-
-                <td class="CREST 3-hover-blue">
-                  <a href="talks_2026.html#CREST2">CREST: Emti</a>
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session6">Mark van der Wilk</a>
-                </td>
-              </tr>
-              <tr>
-                <td>12:30-14:00</td>
-                <td class="break">Lunch</td>
-
-                <td class="break">Lunch</td>
-
-                <td class="break">Lunch</td>
-
-                <td class="break">Lunch</td>
-
-                <td class="break">Lunch</td>
-              </tr>
-              <tr>
-                <td>14:00-15:00</td>
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial3"
-                    >Discussion: Continual Learning</a
-                  >
-                </td>
-
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial8"
-                    >Discussion: Model merging</a
-                  >
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session3">David Rügamer</a>
-                </td>
-
-                <td class="CREST w3-hover-blue">
-                  <a href="talks_2026.html#CREST3">CREST: Thomas, Siddharth</a>
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session7">Marcus Rohrbach</a>
-                </td>
-              </tr>
-              <tr>
-                <td>15:00-16:00</td>
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial4"
-                    >Discussion: LLM training</a
-                  >
-                </td>
-
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial9">Free Discussion</a>
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session4">Poster Session</a>
-                </td>
-
-                <td class="CREST w3-hover-blue">
-                  <a href="talks_2026.html#CREST4"
-                    >CREST: Kenichi, Keigo, Bai Cong</a
-                  >
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#session8">Abeba Birhane</a>
-                </td>
-              </tr>
-              <tr>
-                <td>16:00-16:30</td>
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-
-                <td class="break">Coffee Break</td>
-              </tr>
-              <tr>
-                <td>16:30-18:00</td>
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial5">Free Discussion</a>
-                </td>
-
-                <td class="tutorial w3-hover-orange">
-                  <a href="talks_2026.html#tutorial10">Free Discussion</a>
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#poster1">Poster Session</a>
-                </td>
-
-                <td class="CREST w3-hover-blue">
-                  <a href="talks_2026.html#poster2">Poster Session</a>
-                </td>
-
-                <td class="talk w3-hover-blue">
-                  <a href="talks_2026.html#panel">Panel Discussion</a>
-                </td>
-              </tr>
-              <tr>
-                <td>18:00-</td>
-                <td>Dinner/Drinks</td>
-                <td></td>
-                <td></td>
-                <td>Speakers Dinner</td>
-                <td>Dinner/Drinks</td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="day-column">
+              <div class="header">June 26</div>
+              <div class="event-box none"></div>
+              <div class="event-box talk">Invited talk 4</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box talk">Invited talk 5</div>
+              <div class="event-box break">Lunch</div>
+              <div class="event-box talk">Invited talk 6</div>
+              <div class="event-box talk">Invited talk 7</div>
+              <div class="event-box break">Coffee Break</div>
+              <div class="event-box panel">Panel Discussion</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    -->
     <!-- end of row -->
 
     <div class="w3-row">
