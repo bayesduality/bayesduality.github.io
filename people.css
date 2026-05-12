@@ -6,12 +6,16 @@ html {
   box-sizing: inherit;
 }
 
+.wide-column,
 .column {
   float: left;
   width: 33.0%;
   max-width: 180px;
   margin-bottom: 0px;
   padding: 0 5px;
+}
+
+.wide-column {
   margin-left: 25px;
   margin-right: 25px;
 }
