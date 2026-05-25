@@ -14,6 +14,7 @@
 }
 
 .event-box, .time-slot, .header {
+  font-size: 0.9rem;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 5px;
@@ -39,12 +40,140 @@
   font-weight: bold;
 }
 
-.break { background-color: #f5f5f5; color: #999; border-style: dashed; }
-.none { border-style: none; }
-.tutorial { border-left: 5px solid #ff9800; background-color: #fff4e5; }
-.talk { border-left: 5px solid #2196f3; background-color: #e3f2fd; }
-.panel { border-left: 5px solid #8e7cc3; background-color: #f1eff8; }
-.poster { border-left: 5px solid #d0715c; background-color: #f9ebe8; }
-.crest { border-left: 5px solid #6a95dd; background-color: #eef3fc; }
-.discussion { border-left: 5px solid #82c4ba; background-color: #edf7f6; }
-.special { border-left: 5px solid #d4cc72; background-color: #faf9e8; }
+.break { background-color: #f5f5f5; color: #999; border-style: dashed !important;}
+.none { border-style: none !important; }
+.tutorial { border-left: 5px solid #ff9800 !important; background-color: #fff4e5; }
+.talk { border-left: 5px solid #2196f3 !important; background-color: #e3f2fd; }
+.panel { border-left: 5px solid #8e7cc3 !important; background-color: #f1eff8; }
+.poster { border-left: 5px solid #d0715c !important; background-color: #f9ebe8; }
+.crest { border-left: 5px solid #4caf50 !important; background-color: #edf7ed; }
+.discussion { border-left: 5px solid #82c4ba !important; background-color: #edf7f6; }
+.special { border-left: 5px solid #d4cc72 !important; background-color: #faf9e8; }
+
+.schedule-block > div,
+.schedule-block > details {
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 1px solid #ddd;
+  border-left-width: 5px;
+}
+
+.schedule-block > details summary,
+.schedule-block > div {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  list-style: none;
+  padding-left: 5px
+}
+
+.schedule-block > details summary {
+  cursor: pointer;
+}
+
+.schedule-block > details summary::-webkit-details-marker {
+  display: none;
+}
+
+.schedule-block > div::before,
+.schedule-block > details summary::before {
+  flex: 0 0 140px;
+  font-variant-numeric: tabular-nums;
+  font-weight: normal;
+}
+
+.morning-session > div:nth-child(1)::before, .morning-session > details:nth-child(1) summary::before { content: "09:50-10:00"; }
+.morning-session > div:nth-child(2)::before, .morning-session > details:nth-child(2) summary::before { content: "10:00-11:00"; }
+.morning-session > div:nth-child(3)::before, .morning-session > details:nth-child(3) summary::before { content: "11:00-11:30"; }
+.morning-session > div:nth-child(4)::before, .morning-session > details:nth-child(4) summary::before { content: "11:30-12:30"; }
+.morning-session > div:nth-child(5)::before, .morning-session > details:nth-child(5) summary::before { content: "12:30-14:00"; }
+
+.afternoon-session > div:nth-child(1)::before, .afternoon-session > details:nth-child(1) summary::before { content: "14:00-15:00"; }
+.afternoon-session > div:nth-child(2)::before, .afternoon-session > details:nth-child(2) summary::before { content: "15:00-16:00"; }
+.afternoon-session > div:nth-child(3)::before, .afternoon-session > details:nth-child(3) summary::before { content: "16:00-16:30"; }
+.afternoon-session > div:nth-child(4)::before, .afternoon-session > details:nth-child(4) summary::before { content: "16:30-18:00"; }
+.afternoon-session > div:nth-child(5)::before, .afternoon-session > details:nth-child(5) summary::before { content: "18:00-     "; }
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.schedule-block > details[open] .dropdown-content {
+  animation: slideDown 0.25s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+.dropdown-content {
+  padding: 10px 15px 15px 140px;
+  border-top: 1px dashed #ddd;
+  overflow: hidden;
+}
+
+.dropdown-content p {
+  margin: 5px 0;
+  text-align: justify;
+}
+
+.schedule-block > details summary::after {
+  content: "(Details)";
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #2b579a;
+  font-weight: 500;
+  padding-right: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.schedule-block > details[open] summary::after {
+  content: "(Close)";
+  color: #777;
+}
+
+.schedule-block > details summary:hover {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+.schedule-block > details summary:hover::after {
+  text-decoration: underline;
+}
+
+.schedule-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.legend-badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  border: 1px solid #ddd;
+  border-left-width: 4px;
+}
