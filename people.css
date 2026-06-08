@@ -29,6 +29,7 @@ html {
 
 .card {
     min-height: 350px;
+    min-width: 170px;
 }
 
 .container {
