@@ -116,6 +116,7 @@
   padding: 10px 15px 15px 140px;
   border-top: 1px dashed #ddd;
   overflow: hidden;
+  scroll-margin-top: 40px;
 }
 
 .dropdown-content p {
