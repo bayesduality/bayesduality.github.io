@@ -79,7 +79,7 @@
 
 .schedule-block > div::before,
 .schedule-block > details summary::before {
-  flex: 0 0 107px;
+  flex: 0 0 103px;
   font-variant-numeric: tabular-nums;
   font-weight: normal;
 }
@@ -113,7 +113,7 @@
 }
 
 .dropdown-content {
-  padding: 10px 15px 15px 140px;
+  padding: 10px 15px 15px 40px;
   border-top: 1px dashed #ddd;
   overflow: hidden;
   scroll-margin-top: 40px;
