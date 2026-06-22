@@ -79,7 +79,7 @@
 
 .schedule-block > div::before,
 .schedule-block > details summary::before {
-  flex: 0 0 140px;
+  flex: 0 0 107px;
   font-variant-numeric: tabular-nums;
   font-weight: normal;
 }
