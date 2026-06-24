@@ -339,11 +339,28 @@
             </details>
             <details class="talk">
               <summary>
-                <span><i>Kamelia Daudel</i>: Title TBA</span>
+                <span><i>Kamelia Daudel</i>: Importance Weighted Variational Inference without the Reparameterization Trick</span>
               </summary>
               <div id="session44" class="dropdown-content">
-                <p><strong>Abstract:</strong> TBA</p>
-                <p><strong>Bio:</strong> TBA</p>
+                <p>
+                  <strong>Abstract:</strong> Importance weighted variational inference (VI) approximates densities known up to a normalizing constant by
+                  optimizing bounds that tighten with the number of Monte Carlo samples N. Standard optimization relies on reparameterized gradient estimators,
+                  which are well-studied theoretically yet restrict both the choice of the data-generating process and the variational approximation. While
+                  REINFORCE gradient estimators do not suffer from such restrictions, they lack rigorous theoretical justification. In this paper, we provide
+                  the first comprehensive analysis of REINFORCE gradient estimators in importance weighted VI, leveraging this theoretical foundation to
+                  diagnose and resolve fundamental deficiencies in current state-of-the-art estimators. Specifically, we introduce and examine a generalized
+                  family of variational inference for Monte Carlo objectives (VIMCO) gradient estimators. We prove that state-of-the-art VIMCO gradient
+                  estimators exhibit a vanishing signal-to-noise ratio (SNR) as N increases, which prevents effective optimization. To overcome this issue, we
+                  propose the novel VIMCO-⋆ gradient estimator and show that it averts the SNR collapse of existing VIMCO gradient estimators by achieving a √N
+                  SNR scaling instead. We demonstrate its superior empirical performance compared to current VIMCO implementations in challenging settings where
+                  reparameterized gradients are typically unavailable.
+                </p>
+                <p>
+                  <strong>Bio:</strong> Kamélia Daudel is an Assistant Professor of Statistics at ESSEC Business School. Prior to that, she was a postdoctoral
+                  researcher in the Department of Statistics at the University of Oxford working with Arnaud Doucet. Her research lies in the field of Bayesian
+                  Inference. In particular, she is interested in Variational Inference methods which go beyond the commonly-used parametric variational
+                  distribution framework and which involve flexible variational bounds.
+                </p>
               </div>
             </details>
             <div class="break">Coffee Break</div>
