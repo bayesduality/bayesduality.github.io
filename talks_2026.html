@@ -120,8 +120,25 @@
                 <span><i>Jonghyun Choi</i>: A Few Issues in Continual Learning</span>
               </summary>
               <div id="session23" class="dropdown-content">
-                <p><strong>Abstract:</strong> I will outline challenges and shifting paradigms in continual learning (CL) within the context of large models. I emphasize stability-plasticity dilemma that CL must balance catastrophic forgetting with adapting to new knowledge. By four key issues, I will show how conventional setups fail to ensure fair computational comparisons and explore the complexities of managing CL across heterogeneous network architectures. Furthermore, I present evidence that for large foundation models, knowledge acquisition and adaptation become more dominant challenges than forgetting itself. Ultimately, I argue that advancing large-scale CL requires a shift toward innovative approaches, such as decentralized collaboration frameworks and modular memory systems</p>
-                <p><strong>Bio:</strong> I received my B.S. (2003) and M.S. (2008) in Electrical and Computer Engineering from Seoul National University, and my Ph.D. (2015) from the University of Maryland, College Park, under the supervision of Prof. Larry S. Davis. Since 2024, I have been an Associate Professor in the Department of Electrical and Computer Engineering at SNU. During my Ph.D., I did research internships at the US Army Research Lab (2012), Adobe Research (2013), Disney Research Pittsburgh (2014), and Microsoft Research Redmond (2014). I subsequently worked as a Research Scientist at the Allen Institute for AI (AI2, Seattle, 2016–2018) and at Comcast Applied AI Research (Washington, D.C., 2015–2016), and held faculty positions as Assistant Professor at GIST (2018–2022) and Associate Professor at Yonsei University (2022–2024). I serve as an Area Chair for NeurIPS, ICML, ICLR, CVPR, WACV, AAAI (Senior PC), and ICRA, and as an Associate Editor for IEEE Transactions on PAMI and IJCV. My research focuses on visual understanding for edge devices and home robots, and on image/video visual recognition under computational and data-efficiency constraints.</p>
+                <p>
+                  <strong>Abstract:</strong> I will outline challenges and shifting paradigms in continual learning (CL) within the context of large models. I
+                  emphasize stability-plasticity dilemma that CL must balance catastrophic forgetting with adapting to new knowledge. By four key issues, I will
+                  show how conventional setups fail to ensure fair computational comparisons and explore the complexities of managing CL across heterogeneous
+                  network architectures. Furthermore, I present evidence that for large foundation models, knowledge acquisition and adaptation become more
+                  dominant challenges than forgetting itself. Ultimately, I argue that advancing large-scale CL requires a shift toward innovative approaches,
+                  such as decentralized collaboration frameworks and modular memory systems
+                </p>
+                <p>
+                  <strong>Bio:</strong> I received my B.S. (2003) and M.S. (2008) in Electrical and Computer Engineering from Seoul National University, and my
+                  Ph.D. (2015) from the University of Maryland, College Park, under the supervision of Prof. Larry S. Davis. Since 2024, I have been an
+                  Associate Professor in the Department of Electrical and Computer Engineering at SNU. During my Ph.D., I did research internships at the US
+                  Army Research Lab (2012), Adobe Research (2013), Disney Research Pittsburgh (2014), and Microsoft Research Redmond (2014). I subsequently
+                  worked as a Research Scientist at the Allen Institute for AI (AI2, Seattle, 2016–2018) and at Comcast Applied AI Research (Washington, D.C.,
+                  2015–2016), and held faculty positions as Assistant Professor at GIST (2018–2022) and Associate Professor at Yonsei University (2022–2024). I
+                  serve as an Area Chair for NeurIPS, ICML, ICLR, CVPR, WACV, AAAI (Senior PC), and ICRA, and as an Associate Editor for IEEE Transactions on
+                  PAMI and IJCV. My research focuses on visual understanding for edge devices and home robots, and on image/video visual recognition under
+                  computational and data-efficiency constraints.
+                </p>
               </div>
             </details>
             <div id="session24" class="poster">Poster Session</div>
@@ -195,8 +212,20 @@
               <div id="session33" class="dropdown-content">
                 <p><i>Adrian R. Minut</i>: EVON (15 min)</p>
                 <div class="subcontent">
-                  <p><strong>Abstract:</strong></p>
-                  <p><strong>Bio:</strong></p>
+                  <p>
+                    <strong>Abstract:</strong> EVON is a method for learning richer uncertainty in neural networks without the cost of a full covariance model.
+                    The main idea is to use the eigenspace learned by SOAP, run a diagonal variational method like IVON in that rotated space, and then map the
+                    result back to the original parameters. This turns a diagonal posterior in the rotated basis into a structured covariance in parameter
+                    space. We will go into why diagonal uncertainty is too limited, how SOAP provides a useful learned basis, and how EVON combines that basis
+                    with practical variational updates. This results in a method that stays close to modern training pipelines while capturing parameter
+                    correlations that diagonal methods miss. We will also see how EVON recovers meaningful covariance structure in logistic regression and
+                    improves language model pretraining and posterior sampling compared to IVON.
+                  </p>
+                  <p>
+                    <strong>Bio:</strong> Adrian Robert Minut is a PhD student at Sapienza University of Rome, co-advised by Prof. Emanuele Rodolà and Prof.
+                    Iacopo Masi. His research focuses on Large Language Models (LLMs), specifically exploring model merging and uncertainty estimation. His
+                    primary goal is to develop methods that make these models more robust, efficient, and transparent.
+                  </p>
                 </div>
                 <br />
                 <p><i>Yohan Jung &amp; Emtiyaz Khan</i>: Compact Memory (15 min)</p>
@@ -221,16 +250,29 @@
             <details class="crest">
               <summary>CREST Talks: Kenichi, Julyan</summary>
               <div id="session34" class="dropdown-content">
-                <p><i>Kenichi Bannai</i>: Overview of Math Team Work Progress (30 min)</p>
+                <p><i>Kenichi Bannai</i>: Understanding and Describing Principles behind Bayes Duality (30 min)</p>
                 <div class="subcontent">
-                  <p><strong>Abstract:</strong> TBA</p>
-                  <p><strong>Bio:</strong> TBA</p>
+                  <p>
+                    <strong>Bio:</strong> Kenichi Bannai is a Team Director at RIKEN AIP, and a Professor of Mathematics and Keio University. His speciality has
+                    been and is arithmetic geometry, a branch in pure mathematics.
+                  </p>
                 </div>
                 <br />
-                <p><i>Julyan Arbel</i>: Overview of French Side Work Progress (30 min)</p>
+                <p><i>Julyan Arbel</i>: From Priors to Pruning: recent developments in Bayesian neural networks (30 min)</p>
                 <div class="subcontent">
-                  <p><strong>Abstract:</strong> TBA</p>
-                  <p><strong>Bio:</strong> TBA</p>
+                  <p>
+                    <strong>Abstract:</strong> In this talk I will describe results of the French Stat Theory team in the Bayes-Duality project, focusing on
+                    Bayesian neural networks. I will present work on the statistical properties of Bayesian neural network priors, and discuss uncertainty
+                    quantification in Bayesian deep learning through tempered posteriors. Finally, I will introduce a new framework based on sources of
+                    uncertainty, which enables adaptive posterior concentration and naturally leads to sparse, self-pruning Bayesian neural networks with
+                    compact architectures. I will highlight both theoretical guarantees and empirical results.
+                  </p>
+                  <p>
+                    <strong>Bio:</strong> Julyan Arbel is a researcher at Inria Grenoble, France, working on Bayesian nonparametrics, Bayesian deep learning,
+                    variational inference, and simulation-based inference. He serves as Associate Editor for journals including Bayesian Analysis and Statistics
+                    and Computing, and as Area Chair for major machine learning conferences. He is an active member of ISBA, where he currently serves as
+                    Chair-Elect of the BayesAI Section and Social Media Officer.
+                  </p>
                 </div>
               </div>
             </details>
