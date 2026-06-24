@@ -184,3 +184,9 @@
   padding-left: 5px;
   border-left: 3px solid #ddd;
 }
+
+.titleflex {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
